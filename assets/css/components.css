@@ -1,0 +1,2297 @@
+/**
+ * [Table of contents]
+ *
+ * [&. Content / #key]
+ * [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ * Summary:
+ *
+ *  0. VARIABLE LESS
+ *    - 0.1. Color
+ *    - 0.2. Font
+ *  1. GLOBAL STYLE
+ *    - 1.1. Button
+ *    - 1.2. Main title
+ *    - 1.3. Star Rangting
+ *    - 1.4. Dish
+ *    - 1.5. Tab Menu
+ *    - 1.6. Input
+ *    - 1.7. Pagination
+ *    - 1.8. Menu Order Item
+ *  2. PAGE
+ *    - 2.1. Homepage Banner
+ *    - 2.2. About Us
+ *    - 2.3. Banner parallax
+ *    - 2.4. List Menu
+ *    - 2.5. Menu Of Day
+ *    - 2.6. Testimonial
+ *    - 2.7. Our Chefs
+ *    - 2.8. Banner Infomation
+ *    - 2.9. Book Table
+ *    - 2.10. Event
+ *    - 2.11. Banner ADS
+ *    - 2.12. Contact
+ *  3. PLUGIN
+ *    - 3.1. jQuery Plugin date picker
+ *      
+ */
+
+/*=================================
+ =====     VARIABLE LESS      =====
+ =================================*/
+
+/*=================================
+====     END VARIABLE LESS     ====
+==================================*/
+
+
+/*=================================
+======      GLOBAL STYLE     ======
+==================================*/
+
+/*----------  1.1. Button  ----------*/
+
+    .btn {
+        line-height: 36px;
+
+        width: 200px;
+        height: 40px;
+        padding: 0 20px;
+
+        -webkit-transition: all .3s ease;
+           -moz-transition: all .3s ease;
+             -o-transition: all .3s ease;
+                transition: all .3s ease;
+        text-transform: uppercase;
+
+        border: 2px solid;
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+                border-radius: 0;
+    }
+
+    .btn:hover {
+        border-bottom: 2px solid;
+    }
+
+    .btn.btn-maincolor {
+        color: #ffffff;
+        border-color: #ed421c;
+        background-color: #ed421c;
+    }
+
+    .btn.btn-maincolor:hover {
+        border-color: #121a2e;
+        background-color: #121a2e;
+    }
+
+    .btn.btn-transparent {
+        color: #ffffff;
+        border-color: #ffffff;
+        background-color: transparent;
+    }
+
+    .btn.btn-transparent:hover {
+        border-color: #121a2e;
+        background-color: #121a2e;
+    }
+
+    .btn.btn-subcolor {
+        color: #ffffff;
+        border-color: #121a2e;
+        background-color: #121a2e;
+    }
+
+    .btn.btn-subcolor:hover {
+        color: #121a2e;
+        background-color: #ffffff;
+    }
+
+    .group-btn .btn-left {
+        margin-right: 12px;
+    }
+
+/*----------  1.2. Main title  ----------*/
+
+    .circle {
+        border-radius: 50%;
+        border: 3px solid black;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 390px)
+    {
+        .bigpizza {
+            height: auto !important;
+        }
+    }
+
+    .boisson {
+        font-family: 'Tangerine', cursive;
+        color: black;
+        font-size: 43px;
+    }
+
+    #moncercle{
+        background: #ffffffa3;
+        margin-top: 27px;
+        margin-bottom: -18px;
+        border-radius:50%;
+        width:160px;
+        height:160px;
+        border:2px solid black; 
+        margin-left: auto;
+        margin-right: auto;
+}
+
+    #sContent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 350px;
+        margin: 0;            
+        padding: 0;
+        
+        /*CSS3 keyframes animation*/
+        animation-name: AutoSlide;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    #slideshowpizza {
+        position: relative;
+        width: 289px !important;
+        height: 513px;/*
+        margin:  20px auto;*/
+        overflow: hidden;
+        margin-top: 37px;
+        min-width: 200px;
+        border-style: ridge;
+    }
+
+    #sContent li {
+        display: inline;
+    }
+
+    @keyframes AutoSlide {
+    0% {
+        top: 0px; /*1ère image*/
+    }
+    6% {
+        top: 0px; /*idem pour attente*/
+    }
+    12% {
+        top: -513px; /*2ème image*/
+    }
+    18% {
+        top: -513px; /*idem pour attente*/
+    }
+    24% {
+        top: -1026px; /*3ème image*/
+    }
+    30% {
+        top: -1026px; /*idem pour attente*/
+    }
+    36% {
+        top: -1539px; /*4ème image*/
+    }
+    42% {
+        top: -1539px; /*attente*/
+    }
+    48% {
+        top: -2052px; /*5ème image*/
+    }
+    54% {
+        top: -2052px; /*attente*/
+    }
+    60% {
+        top: -2565px; /*1ère image*/
+    }
+    66% {
+        top: -2565px; /*1ère image*/
+    }
+    72% {
+        top: -3078px; /*1ère image*/
+    }
+    78% {
+        top: -3078px; /*1ère image*/
+    }
+    84% {
+        top: -3591px; /*1ère image*/
+    }
+    90% {
+        top: -3591px; /*1ère image*/
+    }
+    100% {
+        top: 0px; /*1ère image*/
+    }
+
+}
+
+    .open {
+        text-align: center !important;
+        font-size: 0px !important;
+    }
+
+    .opening {
+        font-size: 58px !important;
+    }
+
+    .spanvotrepizza {
+        font-size: 22px;
+        text-shadow: 0 0 25px white;
+        color: #205d01;
+        font-style: italic;
+    }
+
+    .titlecouscous {
+        font-family: 'Tangerine', cursive;
+        color: black;
+        text-shadow: 0 0 5px white;
+        font-size: 69px;
+        text-align: center;
+    }
+
+    .openpizza {
+        font-size: 103px !important;
+        font-weight: bold;
+    }
+
+    .titleopen {
+        font-family: 'Tangerine', cursive;
+        color: black;
+        text-shadow: 0 0 5px white;
+        font-size: 78px;
+        text-align: center;
+    }
+
+    #couscous {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .main-title {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        text-align: center;
+    }
+
+    .main-title .bg-image {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        right: 0;
+        left: 0;
+        margin-top: -85px;
+        opacity: .2;
+    }
+
+    .main-title .title {
+        font-family: 'Tangerine', cursive;
+        font-size: 8.286rem;
+        font-weight: 900;
+        line-height: 1;
+        position: relative;
+        z-index: 10;
+        margin: 30px 0 70px 0;
+        color: #205d01;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    .main-title .title:after {
+        width: 11vw;
+        height: 2px;
+        content: '';
+        background-color: currentColor;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 1);
+    }
+
+    .main-title.white .title {
+        color: #ffffff;
+    }
+
+    /*----------  1.3. Star Rangting  ----------*/
+
+    .main-title-2 {
+        font-family: 'antoniobold';
+        font-size: 2.145rem;
+        position: relative;
+        margin-bottom: 50px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .main-title-2 .icons {
+        display: inline-block;
+        margin-right: 7px;
+        color: #ed421c;
+    }
+
+    .main-title-2 .title {
+        font-size: 2.145rem;
+        display: inline-block;
+        margin: 0;
+        color: #01050e;
+    }
+
+    .main-title-2 .subtitle {
+        font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #8d8f93;
+    }
+
+    .main-title-2.white .title,
+    .main-title-2.white .subtitle {
+        color: #ffffff;
+    }
+
+    .main-title-2.no-margin {
+        margin-bottom: 0;
+    }
+
+    .star-rating {
+        font-size: 15px;
+        line-height: 1;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 90px;
+        height: 1em;
+    }
+
+    .star-rating:before {
+        font-family: FontAwesome;
+        position: absolute;
+        top: 0;
+        left: 0;
+        float: left;
+        content: '\f006\f006\f006\f006\f006';
+        letter-spacing: 4px;
+        color: #e7c217;
+    }
+
+    .star-rating span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        float: left;
+        overflow: hidden;
+        padding-top: 1.5em;
+        color: #e7c217;
+    }
+
+    .star-rating span:before {
+        font-family: FontAwesome;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '\f005\f005\f005\f005\f005';
+        letter-spacing: 4px;
+    }
+
+    .star-rating span.width-10 {
+        width: 10%;
+    }
+
+    .star-rating span.width-20 {
+        width: 20%;
+    }
+
+    .star-rating span.width-30 {
+        width: 30%;
+    }
+
+    .star-rating span.width-40 {
+        width: 40%;
+    }
+
+    .star-rating span.width-50 {
+        width: 50%;
+    }
+
+    .star-rating span.width-60 {
+        width: 60%;
+    }
+
+    .star-rating span.width-70 {
+        width: 70%;
+    }
+
+    .star-rating span.width-80 {
+        width: 80%;
+    }
+
+    .star-rating span.width-90 {
+        width: 90%;
+    }
+
+    .star-rating span.width-100 {
+        width: 100%;
+    }
+
+/*----------  1.4. Dish  ----------*/
+
+    .dish {
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .dish .box {
+        display: table;
+        width: 100%;
+        height: 450px;
+        padding: 12px;
+    }
+
+    .dish .box .name {
+        font-family: 'antonioregular', sans-serif;
+        font-size: 2.143rem;
+        margin: 0 0 20px 0;
+        text-transform: capitalize;
+        color: #01050e;
+    }
+
+    .dish .box .image-dish {
+        position: relative;
+        max-width: 180px;
+        min-height: 135px;
+        margin: 0 auto 20px auto;
+    }
+
+    .dish .box .image-dish img {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        -webkit-transition: all .5s ease;
+           -moz-transition: all .5s ease;
+             -o-transition: all .5s ease;
+                transition: all .5s ease;
+    }
+
+    .dish .box .image-dish .image-1 {
+        opacity: 1;
+    }
+
+    .dish .box .image-dish .image-2 {
+        -webkit-transform: scale(0);
+           -moz-transform: scale(0);
+            -ms-transform: scale(0);
+             -o-transform: scale(0);
+                transform: scale(0);
+
+        opacity: 0;
+    }
+
+    .dish .box .star-rating {
+        margin: 0 auto 30px auto;
+    }
+
+    .dish .box .prices-wrapper {
+        font-family: 'antonioregular', sans-serif;
+        line-height: 1;
+        margin: 0 0 20px 0;
+        text-transform: uppercase;
+    }
+
+    .dish .box .prices-wrapper .prices {
+        color: #a4a6a9;
+        display: inline-block;
+        -webkit-transition: all .5s ease;
+           -moz-transition: all .5s ease;
+             -o-transition: all .5s ease;
+                transition: all .5s ease;
+    }
+
+    .dish .box .prices-wrapper .prices sup {
+        font-size: 2rem;
+    }
+
+    .dish .box .prices-wrapper .prices .number {
+        font-family: 'antoniobold';
+        font-size: 2.857rem;
+    }
+
+    .dish .box .prices-wrapper .unit {
+        font-size: 1.714rem;
+
+        display: inline-block;
+
+        color: #a4a6a9;
+    }
+
+    .dish .box .btn-seemore {
+        position: relative;
+        z-index: 5;
+        width: auto;
+        padding: 0 30px;
+        color: #01050e;
+        border: 1px solid #7a7f8d;
+        background-color: transparent;
+    }
+
+    .dish .box .btn-seemore:hover {
+        color: #ffffff;
+        border: 1px solid #121a2e;
+        background-color: #121a2e;
+    }
+
+    .dish .box .border-efect {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+    }
+
+    .dish .box .border-efect line {
+        -webkit-transition: all .5s ease-in-out;
+           -moz-transition: all .5s ease-in-out;
+             -o-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+
+        fill: none;
+        stroke: #cdcfd1;
+        stroke-width: 1;
+    }
+
+    .dish .box .border-efect line.top,
+    .dish .box .border-efect line.bottom {
+        stroke-dasharray: 366 276;
+    }
+
+    .dish .box .border-efect line.left,
+    .dish .box .border-efect line.right {
+        stroke-dasharray: 456 366;
+    }
+
+    .dish .box:hover .image-dish .image-1 {
+        opacity: 0;
+    }
+
+    .dish .box:hover .image-dish .image-2 {
+        -webkit-transform: scale(1);
+           -moz-transform: scale(1);
+            -ms-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+
+        opacity: 1;
+    }
+
+    .dish .box:hover .prices-wrapper .prices {
+        color: #ed421c;
+    }
+
+    .dish .box:hover .border-efect line {
+        stroke: #121a2e;
+        stroke-width: 10;
+    }
+
+    .dish .box:hover .border-efect line.top {
+        -webkit-transform: translateX(-336px);
+           -moz-transform: translateX(-336px);
+            -ms-transform: translateX(-336px);
+             -o-transform: translateX(-336px);
+                transform: translateX(-336px);
+    }
+
+    .dish .box:hover .border-efect line.bottom {
+        -webkit-transform: translateX(336px);
+           -moz-transform: translateX(336px);
+            -ms-transform: translateX(336px);
+             -o-transform: translateX(336px);
+                transform: translateX(336px);
+    }
+
+    .dish .box:hover .border-efect line.left {
+        -webkit-transform: translateY(426px);
+           -moz-transform: translateY(426px);
+            -ms-transform: translateY(426px);
+             -o-transform: translateY(426px);
+                transform: translateY(426px);
+    }
+
+    .dish .box:hover .border-efect line.right {
+        -webkit-transform: translateY(-426px);
+           -moz-transform: translateY(-426px);
+            -ms-transform: translateY(-426px);
+             -o-transform: translateY(-426px);
+                transform: translateY(-426px);
+    }
+
+    .dish .wrapper {
+        position: relative;
+        display: table-cell;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+/*----------  1.5. Tab Menu  ----------*/
+
+    .tab-menu {
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 50px 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .tab-menu li {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+
+    .tab-menu li.active .name {
+        color: initial;
+    }
+
+    .tab-menu li + li:before {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        content: '';
+        border-left: none;
+    }
+
+    .tab-menu .name {
+        font-family: 'antoniobold';
+        font-size: 1.750rem;
+        color: #8c2727;
+        text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px;
+    }
+
+    .tab-menu .name .icons {
+        margin-right: 15px;
+    }
+
+    .tab-menu .name .icons:before {
+        font-size: 3rem;
+    }
+
+    .tab-menu .name:hover {
+        color: initial;
+    }
+
+    .tab-menu.white .name {
+        color: #ffffff;
+    }
+
+    .tab-menu.white .name:hover {
+        color: #ed421c;
+    }
+
+/*----------  1.6. Input  ----------*/
+
+    .form-control {
+        width: 100%;
+        height: 40px;
+        border-radius: 0 !important;
+        box-shadow: none;
+    }
+
+    .form-control:hover,
+    .form-control:focus {
+        box-shadow: none;
+    }
+
+/*----------  1.7. Pagination  ----------*/
+
+    .pagination {
+        margin: 0;
+    }
+
+    .pagination li .btn-pagination {
+        line-height: 38px;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        padding: 0;
+        text-align: center;
+        color: #677185;
+        border: 1px solid #f5f5f5;
+        -webkit-border-radius: 0 !important;
+           -moz-border-radius: 0 !important;
+                border-radius: 0 !important;
+        background-color: transparent;
+    }
+
+    .pagination li .btn-pagination.active {
+        pointer-events: none;
+        color: #01050e;
+        border: 1px solid #01050e;
+    }
+
+    .pagination li .btn-pagination:hover,
+    .pagination li .btn-pagination:focus {
+        color: #01050e;
+        border: 1px solid #01050e;
+        background-color: transparent;
+    }
+
+    .pagination li .previous,
+    .pagination li .next {
+        line-height: 40px;
+        padding: 0;
+        border: none;
+    }
+
+    .pagination li .previous:hover,
+    .pagination li .next:hover {
+        color: #ed421c;
+        border: none;
+    }
+
+/*----------  1.8. Menu Order Item  ----------*/
+
+    .menu-items .title {
+        font-family: 'antoniobold';
+        font-size: 1.429rem;
+
+        display: inline-block;
+
+        width: 100%;
+        margin-bottom: 5px;
+
+        text-transform: capitalize;
+
+        color: black;
+    }
+
+    .menu-items .title .name {
+        float: left;
+        text-align: left;
+        text-shadow: 0 0 2px #c54747;
+    }
+
+    .menu-items .title .price {
+        float: right;
+        -webkit-transition: all .5s ease;
+           -moz-transition: all .5s ease;
+             -o-transition: all .5s ease;
+                transition: all .5s ease;
+
+        color: #a4a6a9;
+    }
+
+    .menu-items .title:hover .price {
+        color: #ed421c;
+    }
+
+    .menu-items .desciption {
+        margin: 0;
+        text-align: left;
+        font-style: italic;
+        font-size: 15px;
+        text-shadow: 0 0 50px black;
+    }
+
+
+
+    .menu-items {
+        display: table;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .menu-items .item-image {
+        position: relative;
+        display: table-cell;
+        width: 45%;
+    }
+
+    /*.menu-items .item-image:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        -webkit-transition: all .5s ease;
+           -moz-transition: all .5s ease;
+             -o-transition: all .5s ease;
+                transition: all .5s ease;
+        -webkit-transform: scale(0);
+           -moz-transform: scale(0);
+            -ms-transform: scale(0);
+             -o-transform: scale(0);
+                transform: scale(0);
+        background-color: rgba(0, 0, 0, .5);
+    }*/
+
+    .menu-items .item-content {
+        display: table-cell;
+        padding-left: 30px;
+        vertical-align: middle;
+    }
+
+    .menu-items:hover .item-image:after {
+        -webkit-transform: scale(1);
+           -moz-transform: scale(1);
+            -ms-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+    }
+
+/*=================================
+======    END GLOBAL STYLE   ======
+==================================*/
+
+/*=================================
+======          PAGE         ======
+==================================*/
+
+/*----------  2.1. Homepage Banner  ----------*/
+    .homepage-banner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        color: #ffffff;
+        background-color: #121212;
+        background-repeat: repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+                background-size: cover;
+    }
+
+    .homepage-banner .container {
+        height: 100%;
+    }
+
+    .background-slide .slide-item {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        color: #ffffff;
+        background-color: #00561b;
+        background-repeat: repeat;
+        background-position: center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+                background-size: cover;
+    }
+
+    .background-slide .slide-item .img-bg {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .background-slide .slide-item.background-item-1 {
+        /*background-image: url('../../../../pizza/pizzagrande.png');*/
+    }
+
+    .background-slide .slide-item.background-item-2 {
+        /*background-image: url('../images/background/homepage-4.jpg');*/
+    }
+
+    .background-slide .slide-item.background-item-3 {
+        /*background-image: url('../images/background/homepage-default.jpg');*/
+    }
+
+    .background-slide .slide-item.background-item-3 .homepage-banner-content {
+        text-align: left;
+    }
+
+    .background-slide .slide-item.background-item-3 .homepage-banner-content .group-title-2 {
+        margin-left: 0;
+        -webkit-animation-delay: .2s;
+                animation-delay: .2s;
+    }
+
+    .background-slide .slide-item.background-item-3 .homepage-banner-content .group-open-hours {
+        margin-top: 25px;
+        -webkit-animation-delay: .6s;
+                animation-delay: .6s;
+    }
+
+    .background-slide .slide-item.background-item-3 .homepage-banner-content .group-open-hours .title {
+        font-size: 1.286rem;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+
+    .background-slide .slide-item.background-item-3 .homepage-banner-content .group-open-hours .time-1 .day,
+    .background-slide .slide-item.background-item-3 .homepage-banner-content .group-open-hours .time-2 .day {
+        display: inline-block;
+        min-width: 130px;
+        text-transform: capitalize;
+    }
+
+    .background-slide .slide-item.background-item-3 .homepage-banner-content .group-open-hours .time-1 .time,
+    .background-slide .slide-item.background-item-3 .homepage-banner-content .group-open-hours .time-2 .time {
+        display: inline-block;
+    }
+
+    .background-slide .slide-item.background-item-3 .homepage-banner-content .group-open-hours .time-1 {
+        margin-bottom: 5px;
+    }
+
+    .background-slide .slide-item.background-item-3 .homepage-banner-content .group-btn-2 {
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s;
+    }
+
+    .background-slide .homepage-banner-warpper {
+        position: relative;
+        z-index: 10;
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    .background-slide .homepage-banner-content {
+        display: table-cell;
+        padding-top: 150px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .background-slide .homepage-banner-content .logo-images {
+        display: block;
+        margin-bottom: 60px;
+        -webkit-animation-delay: .2s;
+                animation-delay: .2s;
+    }
+
+    .background-slide .homepage-banner-content .logo-images img {
+        margin: 0 auto;
+    }
+
+    .background-slide .homepage-banner-content .group-title,
+    .background-slide .homepage-banner-content .group-title-2 {
+        max-width: 770px;
+        margin: 0 auto;
+        -webkit-animation-delay: .2s;
+                animation-delay: .2s;
+    }
+
+    .background-slide .homepage-banner-content .group-title .title,
+    .background-slide .homepage-banner-content .group-title-2 .title {
+        font-family: 'antoniobold';
+        font-size: 3.214rem;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .background-slide .homepage-banner-content .group-title .text,
+    .background-slide .homepage-banner-content .group-title-2 .text {
+        margin: 0;
+    }
+
+    .background-slide .homepage-banner-content .group-btn,
+    .background-slide .homepage-banner-content .btn-center {
+        margin-top: 40px;
+    }
+
+    .background-slide .homepage-banner-content .btn-left,
+    .background-slide .homepage-banner-content .btn-right,
+    .background-slide .homepage-banner-content .btn-center {
+        -webkit-animation-delay: .8s;
+                animation-delay: .8s;
+    }
+
+/*----------  2.2. About Us  ----------*/
+    .about-us {
+        display: table;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .about-us .left-image,
+    .about-us .right-infomation {
+        display: table-cell;
+    }
+
+    .about-us .left-image {
+        position: relative;
+        overflow: hidden;
+        width: 45%;
+        background-color: #121212;
+        /*background-image: url('../images/background/about-us.jpg');*/
+        background-position: center;
+        background-size: cover;
+    }
+
+    .about-us .left-image .homepage-hero-module {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        height: auto !important;
+        -webkit-transition: all 1s ease;
+           -moz-transition: all 1s ease;
+             -o-transition: all 1s ease;
+                transition: all 1s ease;
+
+        opacity: 0;
+    }
+
+    .about-us .left-image .homepage-hero-module .video-container .filter {
+        width: 100% !important;
+    }
+
+    .about-us .left-image .homepage-hero-module .video-container .filter .fillWidth {
+        width: 209% !important;
+        max-width: 1300px !important;
+        margin-left: -50%;
+    }
+
+    .about-us .left-image:hover .homepage-hero-module {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .about-us .right-infomation .content-wrapper {
+        width: 580px;
+        margin-left: 10%;
+    }
+
+    .about-us .right-infomation .text {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .about-us .right-infomation .signature {
+        text-align: right;
+    }
+
+    .about-us .right-infomation .signature .name {
+        margin: 10px 0 0 0;
+        text-transform: uppercase;
+    }
+
+/*----------  2.3. Banner parallax  ----------*/
+    .banner-prallax {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 500px;
+        background-color: #ed421c;
+    }
+
+    .banner-prallax .title-bg {
+        font-family: 'antoniobold';
+        font-size: 8rem;
+        position: absolute;
+        top: 50%;
+        margin: 0;
+        margin-top: -100px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, .1);
+    }
+
+    .banner-prallax .title-bg span {
+        display: inline-block;
+        margin-bottom: 0;
+        padding: 0 10px;
+    }
+
+    .banner-prallax .infomation-wrapper {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .banner-prallax .infomation-wrapper .title {
+        font-family: 'robotoblack';
+        font-size: 3rem;
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+    }
+
+    .banner-prallax .infomation-wrapper .description {
+        font-size: 14px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .banner-prallax .infomation-wrapper .btn {
+        margin-top: 40px;
+    }
+
+    .banner-prallax .infomation-wrapper .btn:hover {
+        border-color: #ffffff;
+    }
+
+    .banner-prallax .img-wrapper {
+        position: absolute;
+        z-index: 9;
+        top: 50%;
+        right: 0;
+        width: 35%;
+        margin-top: -100px;
+    }
+
+    .banner-prallax .img-wrapper-2 {
+        position: absolute;
+        bottom: -7%;
+        left: -10%;
+        width: 30%;
+        opacity: .3;
+    }
+
+    .banner-prallax .img-wrapper-2 img {
+        width: 100%;
+    }
+
+/*----------  2.4. List Menu  ----------*/
+    .special-menu {
+        position: relative;
+
+        /*background-color: #00561b;*/
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        /*background-image: url('../../../../pizzagrande.png');*/
+    }
+
+    .special-menu::after {
+       background-image: url(../../img/font-pizza.jpg);
+        content: "";
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1; 
+    }
+
+    .special-menu .list-dish {
+        margin: 0 -15px;
+    }
+
+    .special-menu .list-dish .dish {
+        margin: 0 15px;
+    }
+
+    .special-menu .list-dish .slick-prev:before,
+    .special-menu .list-dish .slick-next:before {
+        font-family: 'FontAwesome';
+        font-size: 2.6rem;
+
+        -webkit-transition: all .3s ease;
+           -moz-transition: all .3s ease;
+             -o-transition: all .3s ease;
+                transition: all .3s ease;
+
+        opacity: 1;
+        color: rgba(255, 255, 255, .3);
+    }
+
+    .special-menu .list-dish .slick-prev:hover:before,
+    .special-menu .list-dish .slick-next:hover:before {
+        color: #ffffff;
+    }
+
+    .special-menu .list-dish .slick-prev {
+        left: -50px;
+    }
+
+    .special-menu .list-dish .slick-prev:before {
+        content: '\f104';
+    }
+
+    .special-menu .list-dish .slick-next {
+        right: -50px;
+    }
+
+    .special-menu .list-dish .slick-next:before {
+        content: '\f105';
+    }
+
+/*----------  2.5. Menu Of Day  ----------*/
+    .row {
+        border-radius: 10px;
+        box-shadow: 0 0 14px black;
+        background-color: #d03000d1;
+    }
+
+    .menu-of-day {
+        text-align: center;
+    }
+
+    .menu-of-day::after {
+        /*background-image: url(../../img/font-pizza.jpg);*/
+        content: "";
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .menu-of-day .tab-menu {
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+        line-height: 41px;
+    }
+
+    .menu-of-day .content-menu .col-md-6:nth-last-child(-n + 2) .menu-items {
+        margin-bottom: 0;
+    }
+
+/*----------  2.6. Testimonial  ----------*/
+    .testimonial {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        color: #ffffff;
+        background-color: #121212;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+        -webkit-background-size: cover;
+                background-size: cover;
+        /*background-image: url('../images/background/banner-2.jpg');*/
+    }
+
+
+    .testimonial-list {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .testimonial-list .slider-for {
+        left: -60px;
+        margin-bottom: 0;
+    }
+
+    .testimonial-list .slider-nav {
+        width: 240px;
+        margin: 0 auto;
+    }
+
+    .testimonial-list .avatar-item {
+        padding-top: 15px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .testimonial-list .avatar-item .image {
+        position: relative;
+        overflow: hidden;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        -webkit-transition: all .5s ease;
+           -moz-transition: all .5s ease;
+             -o-transition: all .5s ease;
+                transition: all .5s ease;
+        border: 3px solid #ffffff;
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        background-color: #ffffff;
+    }
+
+    .testimonial-list .avatar-item .image:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .testimonial-list .avatar-item.slick-center {
+        position: relative;
+        z-index: 10;
+    }
+
+    .testimonial-list .avatar-item.slick-center .image {
+        -webkit-transform: scale(1.3);
+           -moz-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+             -o-transform: scale(1.3);
+                transform: scale(1.3);
+    }
+
+    .testimonial-list .avatar-item.slick-center .image:after {
+        display: none;
+    }
+
+    .testimonial-list .testimonial-item {
+        display: table;
+
+        padding: 0 30px;
+    }
+
+    .testimonial-list .testimonial-item .icons {
+        font-size: 10rem;
+        line-height: 80px;
+        position: relative;
+        display: table-cell;
+        padding-right: 20px;
+        vertical-align: bottom;
+        color: #ed421c;
+    }
+
+    .testimonial-list .testimonial-item .icons span {
+        position: relative;
+        top: 20px;
+    }
+
+    .testimonial-list .testimonial-item .icons:after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 2px;
+        height: 80px;
+        content: '';
+        background-color: rgba(255, 255, 255, .5);
+    }
+
+    .testimonial-list .testimonial-item .news-content {
+        display: table-cell;
+        padding: 30px 0 20px 20px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .testimonial-list .testimonial-item .news-content .content {
+        position: relative;
+        top: -30px;
+        left: 50%;
+        width: 150px;
+        margin-left: -75px;
+        -webkit-transition: all .5s ease;
+           -moz-transition: all .5s ease;
+             -o-transition: all .5s ease;
+                transition: all .5s ease;
+        text-align: center;
+    }
+
+    .testimonial-list .testimonial-item .news-content .content .name {
+        font-family: 'robotobold';
+        font-size: 16px;
+        margin-bottom: 0;
+        white-space: nowrap;
+        text-transform: capitalize;
+
+        color: #ed421c;
+    }
+
+    .testimonial-list .testimonial-item .news-content .content .text {
+        font-size: 14px;
+        margin: 0;
+        color: #b8b8b8;
+    }
+
+    .testimonial-list .testimonial-item .news-content .description {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0;
+        color: #d5d5d5;
+    }
+
+/*----------  2.7. Our Chefs  ----------*/
+    .our-chefs {
+        /*background-color: #00561b;*/
+    }
+
+    .our-chefs .our-chefs-list {
+        margin: 0 -15px;
+    }
+
+    .our-chefs .chef-item {
+        padding: 0 15px;
+    }
+
+    .chef-item {
+        position: relative;
+    }
+
+    .chef-item .our-chef-avatar {
+        display: block;
+
+        padding-bottom: 147px;
+    }
+
+    .chef-item .our-chef-avatar img {
+        margin: 0 auto;
+    }
+
+    .chef-item .our-chef-info {
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        left: 15px;
+
+        padding: 30px;
+
+        -webkit-transition: all .5s ease;
+           -moz-transition: all .5s ease;
+             -o-transition: all .5s ease;
+                transition: all .5s ease;
+        text-align: center;
+
+        border: 3px solid #eeeeee;
+        background-color: #ffffff;
+    }
+
+    .chef-item .our-chef-info .name {
+        font-family: 'antonioregular', sans-serif;
+        font-size: 1.429rem;
+
+        display: block;
+
+        margin-bottom: 2px;
+
+        text-transform: uppercase;
+
+        color: #01050e;
+    }
+
+    .chef-item .our-chef-info .job {
+        font-size: 14px;
+
+        display: block;
+
+        margin-bottom: 7px;
+
+        -webkit-transition: all .3s ease;
+           -moz-transition: all .3s ease;
+             -o-transition: all .3s ease;
+                transition: all .3s ease;
+        text-transform: capitalize;
+
+        color: #50545c;
+    }
+
+    .chef-item .our-chef-info .description {
+        visibility: hidden;
+        overflow: hidden;
+
+        height: 0;
+        margin-bottom: 7px;
+
+        -webkit-transition: all .5s ease;
+           -moz-transition: all .5s ease;
+             -o-transition: all .5s ease;
+                transition: all .5s ease;
+
+        opacity: 0;
+        color: rgba(255, 255, 255, .5);
+    }
+
+    .chef-item .our-chef-info .our-chef-socials {
+        display: block;
+    }
+
+    .chef-item .our-chef-info .our-chef-socials .link {
+        display: inline-block;
+
+        padding: 0 7px;
+
+        color: #c3c6cb;
+    }
+
+    .chef-item .our-chef-info:hover {
+        border-color: #ed421c;
+        background-color: #ed421c;
+    }
+
+    .chef-item .our-chef-info:hover .name {
+        color: #ffffff;
+    }
+
+    .chef-item .our-chef-info:hover .job {
+        color: #ffffff;
+    }
+
+    .chef-item .our-chef-info:hover .description {
+        display: block;
+        visibility: visible;
+
+        height: 72px;
+
+        opacity: 1;
+    }
+
+    .chef-item .our-chef-info:hover .our-chef-socials .link {
+        color: #ffffff;
+    }
+
+/*----------  2.8. Banner Infomation  ----------*/
+    .banner-infomation-slide {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        color: #ffffff;
+        background-color: #121212;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+        -webkit-background-size: cover;
+                background-size: cover;
+        /*background-image: url('../images/background/banner-3.jpg');*/
+    }
+
+    .banner-infomation-slide .list-infomation {
+        margin: 0 -15px;
+    }
+
+    .banner-infomation-slide .infomation-item {
+        padding: 0 15px;
+    }
+
+    .infomation-item {
+        text-align: center;
+    }
+
+    .infomation-item .icons {
+        font-size: 4.5rem;
+        line-height: 1;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .infomation-item .title {
+        font-family: 'antoniobold';
+        font-size: 1.429rem;
+        margin: 0 0 10px 0;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .infomation-item .description {
+        margin: 0 0 30px 0;
+        color: #dcdcdc;
+    }
+
+    .infomation-item .btn {
+        width: 150px;
+    }
+
+    .infomation-item .btn:hover {
+        color: #ffffff;
+        border-color: #ffffff;
+        background-color: transparent;
+    }
+
+/*----------  2.9. Book Table  ----------*/
+    .book-table {
+        position: relative;
+        display: table;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        background-color: #fff;
+        /*background-image: url('../images/background/banner-4.jpg');*/
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .book-table .main-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-content-open {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    @media (max-width: 767px) {
+        .main-content-open {
+            display: block;
+            justify-content: space-around;
+        }
+
+        #slideshowpizza {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .book-table .form-group {
+        margin-bottom: 50px;
+    }
+
+    .book-table .form-group .col-sm-6 {
+        margin-bottom: 30px;
+    }
+
+    .book-table .form-group .col-sm-6:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
+
+    .book-table .input-group .form-control {
+        text-align: left;
+        border-right: none;
+        background-color: transparent;
+        color: #121a2e;
+        border-color: #121a2e;
+    }
+
+    .book-table .input-group .form-control:hover,
+    .book-table .input-group .form-control:focus {
+        border-color: #121a2e;
+    }
+
+    .book-table .input-group .form-control::-webkit-input-placeholder {
+        color: #50545c;
+    }
+
+    .book-table .input-group .form-control:-moz-placeholder {
+        color: #50545c;
+    }
+
+    .book-table .input-group .form-control::-moz-placeholder {
+        color: #50545c;
+    }
+
+    .book-table .input-group .form-control:-ms-input-placeholder {
+        color: #50545c;
+    }
+
+    .book-table .input-group .input-group-addon {
+        position: relative;
+        z-index: 10;
+        background-color: transparent;
+        color: #50545c;
+        border-color: #121a2e;
+        border-left: none;
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+                border-radius: 0;
+    }
+
+    .book-table .btn {
+        color: #ffffff;
+        border-color: #121a2e;
+        background-color: #121a2e;
+    }
+
+    .book-table .btn:hover {
+        color: #ffffff;
+        border-color: #ed421c;
+        background-color: #ed421c;
+    }
+
+/*----------  2.10. Event  ----------*/
+    .coming-soon {
+        background-color: #fff;
+    }
+
+    .coming-soon-wrapper {
+        display: table;
+        width: 100%;;
+    }
+
+    .coming-soon-wrapper .left-infomation,
+    .coming-soon-wrapper .right-infomation {
+        display: table-cell;
+        width: 50%;
+        padding: 0 15px;
+        vertical-align: middle;
+    }
+
+    .logo-bg {
+        max-width: 555px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #121212;
+        background-image: url('../images/more-image/coming-soon-3.jpg');
+        background-attachment: fixed;
+        background-position: top left -30%;
+        background-size: contain;
+    }
+
+    .logo-bg .list-logo {
+        margin-bottom: 0;
+        padding: 80px 0;
+    }
+
+    .logo-bg .list-logo .item {
+        float: left;
+    }
+
+    .logo-bg .list-logo .item .link {
+        display: block;
+
+        margin-bottom: 20px;
+    }
+
+    .logo-bg .list-logo .item .link img {
+        margin: 0 auto;
+    }
+
+    .logo-bg .list-logo .item .link:last-child {
+        margin-bottom: 0;
+    }
+
+    .coming-soon-event-wrapper {
+        text-align: center;
+    }
+
+    .coming-soon-event-wrapper .infomation .title {
+        font-family: 'antoniobold';
+        font-size: 2.571rem;
+        margin: 0;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+        color: #01050e;
+    }
+
+    .coming-soon-event-wrapper .infomation .date {
+        margin-bottom: 20px;
+        color: #8d8f93;
+    }
+
+    .coming-soon-event-wrapper .infomation .description {
+        margin-bottom: 0;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count {
+        margin: 50px -15px 0 -15px;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count .count-container {
+        display: none;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 33.333333%;
+        height: 160px;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper .time {
+        border: 1px solid #e7e9eb;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper .time .count {
+        font-family: 'robotobold';
+        font-size: 7.143rem;
+        line-height: 160px;
+        color: #ced0d6;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper .time-label {
+        font-family: 'robotobold';
+        font-size: 1.429rem;
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        width: 80px;
+        margin-left: -40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #01050e;
+        background-color: #ffffff;
+    }
+
+    .coming-soon-event-wrapper .btn {
+        margin-top: 50px;
+    }
+
+/*----------  2.11. Banner ADS  ----------*/
+    .taste-of-fresh-wrapper {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        color: #ffffff;
+        background-color: black;
+        background-repeat: repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+                background-size: cover;
+        /*background-image: url('../images/background/banner-5.jpg');*/
+        /*background-image: url('../../../pizza/pizzagrande.png')*/;
+    }
+
+    .taste-of-fresh {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .taste-of-fresh .title {
+        font-family: 'robotoblack';
+        font-size: 3.429rem;
+        margin: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .taste-of-fresh .title .name-1,
+    .taste-of-fresh .title .name-2,
+    .taste-of-fresh .title .name-3 {
+        display: inline-block;
+    }
+
+    .taste-of-fresh .title .name-2 {
+        font-family: 'robotoregular';
+        font-size: 40px;
+        padding: 0 12px;
+    }
+
+    .taste-of-fresh .title .name-3 {
+        color: #ed421c;
+    }
+
+    .taste-of-fresh .text {
+        margin-bottom: 35px;
+        color: #d6d6d6;
+    }
+
+/*----------  2.12. Contact  ----------*/
+
+    .diametre {
+        color: black;
+        font-size: 34px;
+        font-family: 'Tangerine', cursive;
+    }
+
+    .emporter {
+        color: black;
+        font-size: 45px;
+        font-family: 'Tangerine', cursive;
+    }
+
+    .socialnetwork {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 75px;
+    }
+
+    .infofooter {
+        text-align: center;
+        font-family: cursive;
+        font-size: 25px;
+    }
+
+    .listzone {
+        display: flex;
+        justify-content: center;
+    }
+
+    .zone {
+        text-align: center;
+    }
+
+    .livraison {
+        display: flex;
+        font-family: cursive;
+        flex-direction: column;
+    }
+
+    .titlefooter {
+        font-family: 'Tangerine', cursive;
+        text-align: center;
+    }
+
+    .subscribe-email {
+        color: #ffffff;
+        background-color: #ed421c;
+    }
+
+    .subscribe-email .subscribe-email-wrapper {
+        padding: 30px 0;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-left {
+        float: left;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-left .subscribe-email-title {
+        font-size: 1.571rem;
+        line-height: 24px;
+        margin: 0 0 5px 0;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-left .subscribe-email-text {
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, .7);
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right {
+        float: right;
+        max-width: 450px;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right .form-subscribe-email .form-control {
+        padding-left: 30px;
+        color: #ffffff;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        background-color: transparent;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right .form-subscribe-email .form-control::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right .form-subscribe-email .form-control:-moz-placeholder {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right .form-subscribe-email .form-control::-moz-placeholder {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right .form-subscribe-email .form-control:-ms-input-placeholder {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right .form-subscribe-email .input-group-btn {
+        font-size: 14px;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right .form-subscribe-email .input-group-btn .btn-email {
+        position: relative;
+        height: 40px;
+        padding-right: 20px;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        background-color: transparent;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right .form-subscribe-email .input-group-btn .btn-email:after {
+        font-family: 'FontAwesome';
+        position: absolute;
+        right: 0;
+        content: '\f178';
+    }
+
+    .contact-form-wrapper {
+        position: relative;
+        background-color: #ed421c;
+        /*background-image: url('../images/background/homepage-4.jpg');*/
+        background-size: cover;
+        position: center;
+        background-attachment: fixed;
+    }
+
+    .contact-form-wrapper:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        background-color: rgba(0, 2, 5, .5);
+    }
+
+    .contact-form-wrapper .bg-images-pc {
+        position: absolute;
+        bottom: 0;
+        left: -5%;
+        display: none;
+        width: 25%;
+    }
+
+    .contact-form {
+        text-align: center;
+    }
+
+    .contact-form .form-control {
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .contact-form .form-control:hover,
+    .contact-form .form-control:focus {
+        border: 1px solid #fff;
+    }
+
+    .contact-form .form-control::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, .8);
+    }
+
+    .contact-form .form-control:-moz-placeholder {
+        color: rgba(255, 255, 255, .8);
+    }
+
+    .contact-form .form-control::-moz-placeholder {
+        color: rgba(255, 255, 255, .8);
+    }
+
+    .contact-form .form-control:-ms-input-placeholder {
+        color: rgba(255, 255, 255, .8);
+    }
+
+    .contact-form .form-textarea {
+        max-width: 100%;
+        height: 120px;
+        margin-top: 30px;
+    }
+
+    .contact-form .btn {
+        background-color: transparent;
+        border: 2px solid #fff;
+        position: relative;
+        z-index: 10;
+    }
+
+    .contact-form .btn:hover {
+        background-color: #fff;
+        border: 2px solid #fff;
+        color: #ed421c;
+    }
+
+    .text-danger {
+        color: rgba(255, 255, 255, .8);
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .help-block {
+        margin: 0;
+    }
+
+    .help-block ul {
+        margin-bottom: 0;
+
+        text-align: left;
+    }
+
+/*=================================
+======        END PAGE       ======
+==================================*/
+
+/*=================================
+======         PLUGIN        ======
+==================================*/
+
+/*----------  3.1. jQuery Plugin date picker  ----------*/
+
+.datepicker {
+    z-index: 100 !important;
+    padding: 0 !important;
+}
+
+.datepicker .table-condensed {
+    margin: 0 auto;
+    table-layout: fixed;
+}
+
+.datepicker thead {
+    border-bottom: 1px solid #d8dce2;
+}
+
+.datepicker thead .dow {
+         width: calc(14.28571429%);
+         width: -webkit-(14.28571429%);
+    padding-top: 15px;
+
+    text-transform: uppercase;
+
+    color: #50545c;
+}
+
+.datepicker thead .datepicker-switch {
+    font-size: 1.29rem;
+    font-weight: 500;
+
+    cursor: default;
+
+    color: #727272;
+}
+
+.datepicker thead .datepicker-switch:hover {
+    background-color: transparent;
+}
+
+.datepicker thead .next,
+.datepicker thead .prev {
+    position: relative;
+
+    color: transparent;
+}
+
+.datepicker thead .next:hover,
+.datepicker thead .prev:hover {
+    background-color: transparent;
+}
+
+.datepicker thead .next:hover:before,
+.datepicker thead .prev:hover:before {
+    background-color: #ed421c;
+}
+
+.datepicker thead .next:before,
+.datepicker thead .prev:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    line-height: 15px;
+
+    position: absolute;
+    top: 50%;
+
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    text-align: center;
+
+    color: #ffffff;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #e9ebef;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+}
+
+.datepicker thead .prev:before {
+    right: 50%;
+
+    content: '\f104';
+    -webkit-transform: translate(50%, -50%);
+       -moz-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+         -o-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+}
+
+.datepicker thead .next:before {
+    left: 50%;
+
+    content: '\f105';
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.datepicker tbody tr {
+    line-height: 30px;
+}
+
+.datepicker tbody td.day {
+    position: relative;
+
+    color: #77858e;
+}
+
+.datepicker tbody td.day.new,
+.datepicker tbody td.day.old {
+    color: #dadada;
+}
+
+.datepicker tbody td.day:hover {
+    background: none !important;
+}
+
+.datepicker tbody td.day:hover:before {
+    background-color: #efefef;
+}
+
+.datepicker tbody td.day:before {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+
+    width: 30px;
+    height: 30px;
+
+    content: '';
+    -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
+    -webkit-transform: translate(-50%, -52%);
+       -moz-transform: translate(-50%, -52%);
+        -ms-transform: translate(-50%, -52%);
+         -o-transform: translate(-50%, -52%);
+            transform: translate(-50%, -52%);
+
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+
+.datepicker tbody td.day.active,
+.datepicker tbody td.day.range,
+.datepicker tbody td.day.range-end,
+.datepicker tbody td.day.range-start {
+    color: #ffffff;
+    background-color: transparent !important;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+
+.datepicker tbody td.day.active:before,
+.datepicker tbody td.day.range-end:before,
+.datepicker tbody td.day.range-start:before {
+    background-color: #ed421c;
+}
+
+.datepicker tbody td.day.range:before {
+    background-color: #eeeeee;
+}
+
+.ui-timepicker-wrapper {
+    width: 200px;
+    height: 220px;
+}
+
+.ui-timepicker-list li {
+    padding: 10px 0 10px 15px;
+
+    text-align: left;
+}
+
+/*=================================
+======     END PLUGIN       ======
+=================================*/

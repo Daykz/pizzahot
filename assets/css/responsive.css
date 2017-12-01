@@ -1,0 +1,907 @@
+/**
+ * [Table of contents]
+ *
+ * [&. Content / #key]
+ * [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ * Summary:
+ *
+ *  0. VARIABLE LESS
+ *    - 0.1. Color
+ *  1. RESPONSIVE SCREEN
+ *    - 1.1. Media screen max width 1024px
+ *    - 1.2. Media screen max width 768px
+ *    - 1.3. Media screen max width 767px
+ *    - 1.4. Media screen max width 600px
+ *    - 1.5. Media screen max width 480px
+ *    - 1.6. Media screen max width 414px
+ *    - 1.7. Media screen max width 380px
+ *    - 1.8. Media screen max width 320px
+ */
+
+/*=================================
+ =====     VARIABLE LESS      =====
+ =================================*/
+
+/*=================================
+====     END VARIABLE LESS     ====
+==================================*/
+
+
+/*=========================================
+=            RESPONSIVE SCREEN            =
+=========================================*/
+
+/*----------  1.0. Media screen min width 1600px  ----------*/
+
+@media screen and (min-width: 1600px) {
+
+    .book-table {
+        background-position: center;
+    }
+
+    .book-table .main-content {
+        width: 100%;
+    }
+
+    .banner-prallax .title-bg {
+        left: 8%;
+    }
+    .banner-prallax .infomation-wrapper {
+        left: 7%;
+    }
+}
+
+/*----------  1.1. Media screen max width 1024px  ----------*/
+
+@media screen and (max-width: 1024px) {
+    
+    .main-title .title {
+        font-size: 3.8rem;
+        margin: 20px 0 50px 0;
+    }
+
+    .about-us .left-image .homepage-hero-module {
+        display: none;
+    }
+
+    .about-us .right-infomation .content-wrapper {
+        width: 100%;
+        margin-left: 0;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .about-us .right-infomation .text {
+        margin-bottom: 20px;
+    }
+
+    .about-us .right-infomation .signature img {
+        max-width: 100px;
+    }
+
+    .dish .box .border-efect {
+        display: none;
+    }
+
+    .dish .wrapper {
+        border: 1px solid #cdcfd1;
+    }
+
+    .tab-menu .name .icons {
+        margin-right: 10px;
+    }
+
+    .banner-prallax {
+        height: 450px;
+
+        text-align: center;
+    }
+
+    .banner-prallax .title-bg {
+        font-size: 7rem;
+
+        position: relative;
+        top: 45%;
+
+        margin-top: -50px;
+    }
+
+    .banner-prallax .infomation-wrapper {
+        top: 45%;
+    }
+
+    .banner-prallax .img-wrapper {
+        display: none;
+    }
+
+    
+    .coming-soon-wrapper .left-infomation {
+        width: 45%;
+    }
+    
+    .coming-soon-wrapper .right-infomation {
+        width: 55%;
+    }
+    
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper {
+        height: 140px;
+    }
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper .time .count {
+        font-size: 6rem;
+        line-height: 140px;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-left {
+        max-width: 580px;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right {
+        max-width: 325px;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right .form-subscribe-email .form-control {
+        padding-left: 15px;
+    }
+    
+    .menu-items .item-image {
+        width: 38%;
+    }
+
+    .testimonial-list {
+        width: 90%;
+    }
+
+    .testimonial-list .slider-for {
+        left: 0;
+    }
+
+    .testimonial-list .testimonial-item .news-content .content {
+        margin-left: -135px;
+    }
+
+    .logo-bg {
+        max-width: 400px;
+    }
+
+}
+
+/*----------  1.2. Media screen max width 768px  ----------*/
+
+@media screen and (max-width: 768px) {
+
+    .navbar.nav-position .navbar-brand img {
+        max-width: 110px;
+    }
+
+    .navigation .nav-links .main-menu {
+        margin: 0 18px;
+    }
+
+    .homepage-default .homepage-banner-content {
+        text-align: center;
+    }
+
+    .about-us .left-image {
+        display: none;
+    }
+
+    .about-us .right-infomation .text {
+        text-align: justify;
+    }
+
+    .menu-items {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 25px;
+        padding-bottom: 30px;
+    }
+
+    .menu-items .item-image {
+        display: inline-block;
+        float: left;
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    .menu-items .item-image img {
+        width: 100%;
+    }
+
+    .menu-items .item-content {
+        display: inline-block;
+        float: left;
+        width: calc(60% - 20px);
+        padding: 15px 0;
+    }
+    
+    .menu-of-day .tab-menu {
+        width: 100%;
+    }
+
+    .menu-of-day .content-menu .col-md-6:nth-last-child(-n + 2) .menu-items {
+        margin-bottom: 25px;
+    }
+
+    .menu-of-day .content-menu .col-md-6:nth-child(even) .menu-items .item-image {
+        float: right;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .menu-of-day .content-menu .col-md-6:last-child .menu-items {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .banner-prallax .infomation-wrapper .description {
+        width: 90%;
+    }
+
+    .coming-soon-wrapper {
+        display: block;
+    }
+
+    .coming-soon-wrapper .left-infomation,
+    .coming-soon-wrapper .right-infomation {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .coming-soon-wrapper .left-infomation {
+        padding-top: 100px;
+    }
+
+    .coming-soon-wrapper .left-infomation .open-hours-bg {
+        max-width: 470px;
+        margin: 0 auto;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right {
+        float: left;
+        margin-top: 20px;
+    }
+
+    .footer-wrapper .col-2 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-wrapper .col-2:last-child {
+        margin-bottom: 0;
+    }
+
+    .book-table .main-content{
+        width: 100%;
+    }
+
+    .testimonial-list .testimonial-item .news-content {
+        padding: 30px 0 0 20px;
+    }
+
+
+    .background-slide .slide-item.background-item-3 .homepage-banner-content {
+        text-align: center;
+    }
+
+
+    .coming-soon .logo-bg {
+        max-width: 470px;
+        margin: 0 auto 50px auto;
+        background-position: top;
+    }
+    .coming-soon.coming-soon-wrapper .left-infomation {
+        padding-top: 0;
+    }
+
+    .taste-of-fresh {
+        width: 100%;
+    }
+    
+}
+
+/*----------  1.3. Media screen max width 767px  ----------*/
+
+@media screen and (max-width: 767px) {
+
+    .padding-top-100 {
+        padding-top: 60px;
+    }
+    .padding-bottom-100 {
+        padding-bottom: 60px;
+    }
+    .margin-top-70 {
+        margin-top: 50px;
+    }
+    .margin-top-50 {
+        margin-top: 30px;
+    }
+
+
+    /********************* MENU ***********************/
+    .navbar.nav-position {
+        padding: 15px 0;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-header {
+        padding: 0 15px;
+    }
+
+    .navbar.nav-position .navbar-brand {
+        line-height: 50px;
+    }
+
+    .navbar-toggle {
+        margin-right: 0;
+        border: none;
+        padding: 0 10px;
+        margin-top: 15px;
+    }
+
+    .navbar-toggle .icon-bar {
+        height: 4px;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+
+    .navbar-nav {
+        margin: 0;
+    }
+
+    .navigation {
+        float: none;
+        padding: 0;
+        border-top: none;
+    }
+
+    .navbar.nav-position .navigation {
+        background-color: rgba(18,18,18,0.8);
+    }
+
+    .nav-position .navigation .nav-links .main-menu {
+        line-height: 50px;
+    }
+
+    .navigation .nav-links li:before ,
+    .navigation .nav-links li + li:before {
+        font-family: "Fontawesome";
+        content: "\f0f5";
+        font-size: 13px;
+        position: absolute;
+        top: 50%;
+        left: 15px; 
+        margin-top: -13px;
+        color: #e3e3e3;
+    }
+
+    .navigation .nav-links li {
+        padding: 0 15px;
+        border-top: 1px solid rgba(255,255,255,.05);
+        border-bottom: 1px solid rgba(0,0,0,.35);
+    }
+
+    .navigation .nav-links li:first-child:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        top: -1px;
+        left: 0;
+        z-index: 74;
+        border-top: 2px solid rgba(0,0,0,0.35);
+    }
+
+    .navigation .nav-links .main-menu {
+        margin-left: 25px;
+    }
+
+    
+    /********************* HOME PAGE ***********************/
+    .homepage-default,
+    .special-menu,
+    .testimonial,
+    .banner-infomation-slide,
+    .morepage-banner-wrapper,
+    .background-slide .slide-item,
+    .logo-bg {
+        background-attachment: scroll;
+    }
+
+    .main-title .bg-image {
+        margin-top: -60px;
+    }
+
+    .main-title .bg-image .crawfish {
+        max-width: 170px;
+    }
+
+    .main-title .bg-image .clamp {
+        max-width: 120px;
+    }
+
+    .main-title .bg-image .kingcrab {
+        position: relative;
+        top: -15px;
+        max-width: 140px;
+    }
+
+    .main-title .bg-image .cuttle {
+        max-width: 280px;
+    }
+
+    .main-title .bg-image .scallop {
+        max-width: 120px;
+    }
+
+    .main-title .bg-image .shrimp {
+        position: relative;
+        top: 10px;
+        max-width: 170px;
+    }
+
+    .main-title .bg-image .swordfish {
+        max-width: 250px;
+    }
+
+    .main-title .bg-image img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main-title .title {
+        font-size: 5.2rem;
+        margin-bottom: 40px;
+    }
+
+    .tab-menu {
+        margin-bottom: 30px;
+    }
+
+    .homepage-banner {
+        height: auto;
+    }
+
+    .background-slide .slide-item {
+        min-height: 667px;
+        height: 100vh;
+    }
+
+    .background-slide .homepage-banner-content {
+        padding-top: 50px;
+    }
+
+    .banner-prallax {
+        height: 380px;
+    }
+
+    .banner-prallax .title-bg {
+        font-size: 6rem;
+    }
+
+    .banner-prallax .infomation-wrapper .title {
+        font-size: 2.4rem;
+    }
+
+    .banner-prallax .infomation-wrapper {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .banner-prallax .img-wrapper-2 {
+        width: 40%;
+    }
+
+    .book-table .form-group {
+        margin-bottom: 30px;
+    }
+
+    .coming-soon-wrapper .left-infomation {
+        padding-top: 60px;
+    }
+
+    .coming-soon .logo-bg {
+        background-size: cover;
+    }
+
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right {
+        margin-top: 15px;
+    }
+
+    .footer {
+        position: relative;
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .footer .footer-wrapper {
+        display: block;
+    }
+
+    .footer .footer-main {
+        padding: 80px 0 100px 0;
+    }
+
+    .gamba-descripton .logo-foogter {
+        margin-bottom: 30px;
+    }
+
+    .footer-wrapper .widget .content-widget {
+        margin-top: 30px;
+    }
+
+    .hyperlink {
+        padding: 15px 0;
+    }
+
+    .contact-form-wrapper {
+        background-attachment: scroll;
+    }
+
+    .contact-form .col-sm-4 {
+        margin-bottom: 30px;
+    }
+
+    .contact-form .col-sm-4:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+/*----------  1.4. Media screen max width 600px  ----------*/
+
+@media screen and (max-width: 600px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .header-topbar .topbar-right {
+        display: none;
+    }
+
+    .header-topbar .topbar-left > li {
+        padding: 0 10px;
+    }
+
+    .about-us .right-infomation .content-wrapper {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .special-menu .list-dish {
+        margin: 0 -10px;
+    }
+
+    .special-menu .list-dish .dish {
+        margin: 0 10px;
+    }
+
+    .dish .box {
+        height: 420px;
+    }
+
+    .dish .box .image-dish {
+        max-width: 160px;
+        min-height: 120px;
+    }
+
+    .tab-menu {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+
+        border-bottom: none;
+    }
+
+    .tab-menu .name {
+        display: inline-block;
+
+        padding-bottom: 15px;
+
+        border-bottom: none;
+    }
+
+    .tab-menu li {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .tab-menu li:nth-child(odd):before {
+        border-left: none;
+    }
+
+    .tab-menu li:nth-child(even):before {
+        border-left: none;
+    }
+
+    .tab-menu li:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+
+    .tab-menu li:nth-last-child(-n+2) .name {
+        padding-bottom: 0;
+
+        border: none;
+    }
+
+    .menu-items {
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+    }
+
+    .menu-items .title {
+        font-size: 20px;
+    }
+
+    .menu-of-day .content-menu .col-md-6:nth-last-child(-n + 2) .menu-items {
+        margin-bottom: 15px;
+    }
+
+    .menu-of-day .content-menu .col-md-6:last-child .menu-items {
+        margin-bottom: 0 !important;
+    }
+
+    .testimonial-list {
+        width: 100%;
+    }
+
+    .testimonial-list .testimonial-item {
+        padding: 0;
+    }
+
+    .testimonial-list .testimonial-item .icons {
+        display: none;
+    }
+
+    .testimonial-list .testimonial-item .news-content {
+        padding: 20px 0 0 0;
+        text-align: center;
+    }
+
+    .testimonial-list .testimonial-item .news-content .content {
+        top: -20px;
+        left: auto;
+        display: inline-block;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .background-slide .homepage-banner-content .group-title .title,
+    .background-slide .homepage-banner-content .group-title-2 .title {
+        font-size: 3rem;
+    }
+
+    .logo-bg .list-logo {
+        padding: 50px 0;
+    }
+
+}
+
+/*----------  1.5. Media screen max width 480px  ----------*/
+
+@media screen and (max-width: 480px) {
+
+    .group-btn .btn-left {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .group-btn .btn-right {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .menu-of-day .content-menu .col-sm-6.col-xs-6 {
+        width: 100%;
+    }
+
+    .banner-prallax .title-bg {
+        top: 30%;
+    }
+
+    .book-table .form-group .col-sm-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .book-table .form-group .col-sm-6:nth-last-child(-n + 2) {
+        margin-bottom: 20px;
+    }
+
+    .book-table .form-group .col-sm-6:last-child {
+        margin-bottom: 0;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count {
+        margin-top: 30px;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper {
+        height: 100px;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper .time .count {
+        font-size: 4.8rem;
+        line-height: 100px;
+    }
+
+    .footer .footer-main {
+        padding-top: 60px;
+    }
+
+    .footer-wrapper .col-2 .col-md-3 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .footer-wrapper .col-2 .col-md-3:last-child {
+        margin-bottom: 0;
+    }
+
+    .banner-prallax .img-wrapper-2 {
+        width: 70%;
+    }
+
+    .gamba-descripton {
+        top: 0;
+    }
+
+    .gamba-gallery .slick-prev,
+    .gamba-gallery .slick-next {
+        top: 108%;
+    }
+    
+}
+
+/*----------  1.6. Media screen max width 414px  ----------*/
+
+@media screen and (max-width: 414px) {
+
+    /********************* HOME PAGE ***********************/
+
+    .banner-prallax .title-bg {
+        top: 40%;
+        font-size: 5rem;
+        margin-top: -50px;
+    }
+
+    .banner-prallax .infomation-wrapper {
+        top: 38%;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper {
+        padding: 0 10px;
+    }
+
+    .logo-bg .list-logo {
+        padding: 30px 0;
+    }
+    
+}
+
+
+/*----------  1.7. Media screen max width 380px  ----------*/
+
+@media screen and (max-width: 380px) {
+
+    .header-topbar .topbar-left > li {
+        padding: 0 7px;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper .time .count {
+        font-size: 4.2rem;
+    }
+
+    .dish .box {
+        height: 420px;
+    }
+
+    .footer-wrapper .widget .title {
+        padding-bottom: 10px;
+    }
+
+    .footer-wrapper .widget .content-widget {
+        margin-top: 20px;
+    }
+
+    .social-footer {
+        display: none;
+    }
+
+    .pagination li .btn-pagination {
+        line-height: 32px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .background-slide .homepage-banner-content .group-title .title,
+    .background-slide .homepage-banner-content .group-title-2 .title {
+        font-size: 2.6rem;
+    }
+
+    .menu-items {
+        margin-bottom: 20px;
+    }
+
+    .menu-of-day .content-menu .col-md-6:nth-last-child(-n + 2) .menu-items {
+        margin-bottom: 20px;
+    }
+
+    .menu-items .title .name {
+        width: calc(100% - 50px);
+    }
+
+
+    .menu-items .item-image {
+        display: block;
+        float: inherit !important;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto !important;
+    }
+
+    .menu-items .item-content {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .taste-of-fresh .title .name-2 {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+    
+}
+
+
+/*----------  1.8. Media screen max width 320px  ----------*/
+
+@media screen and (max-width: 320px) {
+    
+    .navbar.nav-position {
+        top: 0;
+    }
+
+    .header-topbar {
+        display: none;
+    }
+
+    .banner-prallax .title-bg {
+        top: 25%;
+        margin-top: 0;
+    }
+
+    .banner-prallax .infomation-wrapper .title {
+        font-size: 2rem;
+    }
+
+    .coming-soon-event-wrapper .coming-soon-count .count-wrapper .time-label {
+        font-size: 1.2rem;
+        width: 58px;
+        margin-left: -29px;
+    }
+
+    .taste-of-fresh .title {
+        font-size: 3rem;
+    }
+}

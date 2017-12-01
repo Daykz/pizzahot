@@ -1,0 +1,613 @@
+/**
+ * [Table of contents]
+ *
+ * [&. Content / #key]
+ * [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ * Summary:
+ *
+ *  0. VARIABLE LESS
+ *    - 0.1. Color
+ *    - 0.2. Font
+ *  1. GLOBAL STYLE
+ *    - 1.1. Scaffolding
+ *    - 1.2. CSS for page
+ *  2. HEADER
+ *    - 2.0. Global Header
+ *    - 2.1. Topbar Header
+ *    - 2.2. Main Header
+ *    - 2.3. Menu PC
+ *    - 2.4. DropDown Menu
+ *    - 2.5. Menu Mobile
+ *  3. FOOTER
+ *    - 3.1. Main Footer
+ *    - 3.2. Copyright
+ *    - 3.3. Widget Footer
+ *  4. SIDEBAR
+ *    - 4.1. Main Sidebar
+ *  5. WIDGET
+ *    - 5.0. Global Style
+ *    - 5.1. Search
+ *    - 5.2. Recent Post
+ *    - 5.3. Categories
+ *    - 5.4. Tags
+ *    - 5.5. Gallery
+ *    - 5.6. Socials
+ *    - 5.7. Archives
+ *   
+ */
+
+/*===============================
+=====     VARIABLE LESS     =====
+================================*/
+
+/**
+ * [Table of contents]
+ *
+ * [&. Content / #key]
+ * [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ * Summary:
+ *
+ *  0. VARIABLE LESS
+ *  1. MIXINS
+
+
+/*=============================
+ =====   VARIABLE LESS    =====
+ =============================*/
+
+/*=============================
+ ====  END VARIABLE LESS   ====
+ =============================*/
+
+/*=============================
+ =====       MIXINS       =====
+ =============================*/
+
+/*=============================
+ ====      END MIXINS      ====
+ =============================*/
+
+/*----------  0.1. Color  ----------*/
+
+/*----------  0.2. Font  ----------*/
+
+/*================================
+====     END VARIABLE LESS    ====
+=================================*/
+
+/*================================
+======     GLOBAL STYLE     ======
+=================================*/
+
+/*----------  1.1. Scaffolding  ----------*/
+
+html * {
+    outline: 0 !important;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    -wenkit-font-smoothing: subpixel-antialiased;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: aliceblue;
+    /*background-color: #ffffff;*/
+}
+
+a {
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+
+    border-bottom: none;
+}
+
+.body-wrapper {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.fa-custom:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+
+    display: inline-block;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+}
+
+.main-contents {
+    position: relative;
+    z-index: 10;
+
+    background-color: #ffffff;
+}
+
+.main-right {
+    float: right;
+}
+
+/*----------  1.2. CSS for page  ----------*/
+
+.padding-top-100 {
+    padding-top: 50px;
+}
+
+.padding-top-110 {
+    padding-top: 110px;
+}
+
+.padding-bottom-100 {
+    padding-bottom: 50px;
+}
+
+.padding-top-70 {
+    padding-top: 70px;
+}
+
+.padding-bottom-70 {
+    padding-bottom: 70px;
+}
+
+.margin-top-70 {
+    margin-top: 70px;
+}
+
+.margin-bottom-70 {
+    margin-bottom: 70px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+/*================================
+======   END GLOBAL STYLE   ======
+=================================*/
+
+/*================================
+========      HEADER      ========
+=================================*/
+
+/*----------  2.1. Topbar Header  ----------*/
+.header-topbar {
+    font-size: 12px;
+    line-height: 50px;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background-color: firebrick;
+}
+
+.header-topbar .link {
+    color: #e3e3e3;
+}
+
+.header-topbar .link:hover {
+    color: #ed421c;
+}
+
+.header-topbar .topbar-left {
+    float: left;
+    margin-bottom: 0;
+}
+
+.header-topbar .topbar-left > li {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.header-topbar .topbar-left > li:first-child {
+    padding-left: 0;
+}
+
+.header-topbar .topbar-left > li:last-child {
+    padding-right: 0;
+    border: none;
+}
+
+.header-topbar .topbar-left .link {
+    margin-bottom: 0;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+.header-topbar .topbar-left .link .icons {
+    font-size: 8px;
+    position: relative;
+    top: -2px;
+    margin-right: 7px;
+}
+
+.header-topbar .topbar-left .link .icons-2 {
+    margin-right: 7px;
+}
+
+.header-topbar .topbar-right {
+    float: right;
+    margin-bottom: 0;
+}
+
+.header-topbar .topbar-right .link {
+    font-size: 14px;
+    display: block;
+    width: 25px;
+    text-align: center;
+}
+
+/*----------  2.2. Naviagtion  ----------*/
+.navbar {
+    border: none;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #080705;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.navbar.nav-position {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    box-shadow: none;
+}
+
+.navbar .navbar-brand {
+    float: left;
+    height: auto;
+    padding: 0;
+    line-height: 50px;
+    margin: 0 !important;
+    position: relative;
+    z-index: 100;
+}
+
+.navbar.nav-position .navbar-brand {
+    line-height: 100px;
+}
+
+.navbar .navbar-brand img {
+    display: inline-block;
+    margin: 13px;
+    max-width: 319px;
+}
+
+@media (max-width: 420px) {
+
+    .navbar .navbar-brand img {
+        display: inline-block;
+        margin: 13px;
+        max-width: 220px;
+}
+}
+
+.navbar.nav-position .navbar-brand img {
+    display: inline-block;
+    max-width: 500px;
+}
+
+.navigation {
+    position: relative;
+    float: right;
+}
+
+.navigation .nav-links {
+    position: relative;
+    margin: 24px;
+}
+
+.navigation .nav-links li.active .main-menu,
+.navigation .nav-links li:hover .main-menu {
+    color: #ed421c !important;
+    background-color: transparent;
+}
+
+.navigation .nav-links li .main-menu:focus {
+    color: #e3e3e3;
+}
+
+.navigation .nav-links li + li:before {
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    margin-top: -13px;
+    content: '//';
+    color: #e3e3e3;
+}
+
+.navigation .nav-links li:last-child .main-menu {
+    margin-right: 0;
+}
+
+.navigation .nav-links .main-menu {
+    font-family: 'antonioregular', sans-serif;
+    font-size: 1.700rem;
+    line-height: 50px;
+    position: relative;
+    margin: 0 24px;
+    padding: 0;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    text-transform: uppercase;
+    color: #e3e3e3;
+    background-color: transparent;
+}
+
+.nav-position .navigation .nav-links .main-menu {
+    line-height: 100px;
+}
+
+.navigation .nav-links .main-menu .icons-dropdown {
+    padding-left: 5px;
+}
+
+.navigation .nav-links .main-menu .icons-dropdown i {
+    -webkit-transition: all .4s ease;
+       -moz-transition: all .4s ease;
+         -o-transition: all .4s ease;
+            transition: all .4s ease;
+}
+
+
+/*================================
+=======   End of HEADER   ========
+=================================*/
+
+/*================================
+========      FOOTER      ========
+=================================*/
+
+/*----------  3.1. Main Footer  ----------*/
+
+.footer {
+    position: fixed;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    display: table;
+
+    width: 100%;
+    height: 100vh;
+
+    color: #d8e3f7;
+    background-color: #000205;
+    background-image: url('../images/background/footer.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.footer:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 2, 5, .9);
+}
+
+.footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.footer-wrapper .widget .title {
+    font-family: 'antonioregular', sans-serif;
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+    color: #d1d1d1;
+}
+
+.footer-wrapper .widget .title:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    content: '';
+    background-color: #ed421c;
+}
+
+.footer-wrapper .widget .content-widget {
+    margin-top: 40px;
+}
+
+/*----------  3.2. Copyright  ----------*/
+
+.hyperlink {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 0;
+    color: #303540;
+    border-top: 1px solid #181e29;
+}
+
+.hyperlink .name-company {
+    font-weight: bold;
+}
+
+.hyperlink .social-footer ul {
+    margin-bottom: 0;
+}
+
+.hyperlink .social-footer .link {
+    font-size: 18px;
+    display: block;
+    width: 28px;
+    text-align: center;
+    color: #303540;
+}
+
+.hyperlink .social-footer .link:hover {
+    color: #ed421c;
+}
+
+/*----------  3.3. Widget Footer  ----------*/
+
+.gamba-descripton {
+    position: relative;
+    top: -20px;
+}
+
+.gamba-descripton .logo-foogter {
+    margin-bottom: 40px;
+}
+
+.gamba-descripton .text {
+    margin-bottom: 0;
+}
+
+.gamba-info .info-list ul {
+    margin-bottom: 0;
+}
+
+.gamba-info .info-list ul li {
+    display: table;
+    width: 100%;
+    padding: 0 0 10px;
+    border: none;
+}
+
+.gamba-info .info-list ul li:last-child {
+    padding-bottom: 0;
+}
+
+.gamba-info .info-list ul li .icons {
+    display: table-cell;
+    width: 25px;
+}
+
+.gamba-info .info-list ul li .link {
+    display: table-cell;
+    -webkit-transition: all .6s ease;
+       -moz-transition: all .6s ease;
+         -o-transition: all .6s ease;
+            transition: all .6s ease;
+
+    color: #d8e3f7;
+}
+
+.gamba-info .info-list ul li .link:hover {
+    color: #ed421c;
+}
+
+.gamba-info .info-list ul li .link-2 {
+    line-height: 30px;
+}
+
+.gamba-opentime .time-service {
+    margin-bottom: 15px;
+}
+
+.gamba-opentime .time-service:last-child {
+    margin-bottom: 0;
+}
+
+.gamba-opentime .time-service .title-time {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.gamba-opentime .time-service .content-time {
+    text-transform: capitalize;
+}
+
+.gamba-gallery .content-widget {
+    margin: 0 -10px;
+}
+
+.gamba-gallery .content-widget .item {
+    padding: 0 10px;
+}
+
+.gamba-gallery .content-widget .item img {
+    width: 100%;
+}
+
+.gamba-gallery .slick-prev,
+.gamba-gallery .slick-next {
+    top: 120%;
+}
+
+.gamba-gallery .slick-prev:before,
+.gamba-gallery .slick-next:before {
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+    opacity: 1;
+    color: #d8e3f7;
+}
+
+.gamba-gallery .slick-prev:hover:before,
+.gamba-gallery .slick-next:hover:before {
+    color: #ed421c;
+}
+
+.gamba-gallery .slick-prev {
+    right: 20px;
+    left: auto;
+}
+
+.gamba-gallery .slick-prev:before {
+    content: '\f104';
+}
+
+.gamba-gallery .slick-next {
+    right: 0;
+}
+
+.gamba-gallery .slick-next:before {
+    content: '\f105';
+}
+
+/*================================
+========   End of FOOTER   =======
+=================================*/
