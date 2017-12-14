@@ -8,70 +8,7 @@ jQuery(function($) {
     =======================================*/
     gamba.mainFunction = function() {
 
-        // ----------------------- WOW-JS --------------------------- //
-            new WOW().init();
-
-        // ----------------------- DATEPICKER JS --------------------------- //
-            // js for calendar
-            $('.input-daterange, .archive-datepicker').datepicker({
-                format: 'mm/dd/yy',
-                maxViewMode: 0
-            });
-
-            // js for time
-            $('.times-open').timepicker({ 
-                'scrollDefault': 'now' 
-            });
-
-        // ----------------------- SLIDE BANNER --------------------------- //
-            $('.background-slide').slick({
-                dots: false,
-                arrows: false,
-                speed: 700,
-                fade: true,
-                autoplay: true,
-                autoplaySpeed: 5000,
-                cssEase: 'linear',
-                pauseOnHover: false
-            });
-           
-            $('.background-slide').on('afterChange', function(event, slick, currentSlide){
-                $('.slick-active  .logo-images').addClass('animated fadeInDown');
-                $('.slick-active  .group-btn-2').addClass('animated fadeInUp');
-                $('.slick-active  .group-title').addClass('animated fadeInUp');
-                $('.slick-active  .group-title-2').addClass('animated fadeInRight');
-                $('.slick-active  .group-open-hours').addClass('animated fadeInRight');
-                $('.slick-active  .btn-left').addClass('animated fadeInLeft');
-                $('.slick-active  .btn-right').addClass('animated fadeInRight');
-                $('.slick-active  .btn-center').addClass('animated zoomIn');
-                $('.slick-active  .logo-images').removeClass('hidden');
-                $('.slick-active  .group-btn-2').removeClass('hidden');
-                $('.slick-active  .group-title').removeClass('hidden');
-                $('.slick-active  .group-title-2').removeClass('hidden');
-                $('.slick-active  .group-open-hours').removeClass('hidden');
-                $('.slick-active  .btn-left').removeClass('hidden');
-                $('.slick-active  .btn-right').removeClass('hidden');
-                $('.slick-active  .btn-center').removeClass('hidden');
-            });
-
-            $('.background-slide').on('beforeChange', function(event, slick, currentSlide){
-                $('.slick-active  .logo-images').removeClass('animated fadeInDown');
-                $('.slick-active  .group-btn-2').removeClass('animated fadeInUp');
-                $('.slick-active  .group-title').removeClass('animated fadeInUp');
-                $('.slick-active  .group-title-2').removeClass('animated fadeInRight');
-                $('.slick-active  .group-open-hours').removeClass('animated fadeInRight');
-                $('.slick-active  .btn-left').removeClass('animated fadeInLeft');
-                $('.slick-active  .btn-right').removeClass('animated fadeInRight');
-                $('.slick-active  .btn-center').removeClass('animated zoomIn');
-                $('.slick-active  .logo-images').addClass('hidden');
-                $('.slick-active  .group-btn-2').addClass('hidden');
-                $('.slick-active  .group-title').addClass('hidden');
-                $('.slick-active  .group-title-2').addClass('hidden');
-                $('.slick-active  .group-open-hours').addClass('hidden');
-                $('.slick-active  .btn-left').addClass('hidden');
-                $('.slick-active  .btn-right').addClass('hidden');
-                $('.slick-active  .btn-center').addClass('hidden');
-            });
+        
 
 
         // ----------------------- SLIDE MENU --------------------------- //
