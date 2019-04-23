@@ -98,7 +98,7 @@
                             </h1>
                         </div>
                         <h2 class="titleopen openpizza" style="font-size: 60px !important;">
-                            En livraison ou à emporter - Tél. 02 18 09 15 51
+                            livraison ou  - Tél. 02 18 09 15 51
                         </h2>
                         <br>
                         <span class="titleopen opening">
@@ -179,34 +179,402 @@
                     <div class="main-content">
                         <ul role="tablist" class="tab-menu">
                             <li role="presentation" class="active">
-                                <a href="#starters" aria-controls="starters" role="tab" data-toggle="tab" class="name"><span>Les Traditionnelles</span></a>
+                                <a href="#all" aria-controls="all" role="tab" data-toggle="tab" class="name" id='allpizzas'><span>Toutes nos pizzas</span></a>
                             </li>
                             <li role="presentation">
-                                <a href="#dishes" aria-controls="dishes" role="tab" data-toggle="tab" class="name"> <span>Les Végétariennes</span></a>
+                                <a href="#starters" aria-controls="starters" role="tab" data-toggle="tab" class="name" id='trad'><span>Les Traditionnelles</span></a>
                             </li>
                             <li role="presentation">
-                                <a href="#deserts" aria-controls="deserts" role="tab" data-toggle="tab" class="name"> <span>Les Chaussons</span></a>
+                                <a href="#dishes" aria-controls="dishes" role="tab" data-toggle="tab" class="name" id='vege'> <span>Les Végétariennes</span></a>
                             </li>
                             <li role="presentation">
-                                <a href="#drinks" aria-controls="drinks" role="tab" data-toggle="tab" class="name"> <span>Les Onctueuses</span></a>
+                                <a href="#deserts" aria-controls="deserts" role="tab" data-toggle="tab" class="name"  id='chauss'> <span>Les Chaussons</span></a>
                             </li>
                             <li role="presentation">
-                                <a href="#speciales" aria-controls="speciales" role="tab" data-toggle="tab" class="name"> <span>Les Spéciales</span></a>
+                                <a href="#drinks" aria-controls="drinks" role="tab" data-toggle="tab" class="name" id='onctu'> <span>Les Onctueuses</span></a>
                             </li>
                             <li role="presentation">
-                                <a href="#votrepizza" aria-controls="votrepizza" role="tab" data-toggle="tab" class="name"> <span>Votre Pizza</span></a>
+                                <a href="#speciales" aria-controls="speciales" role="tab" data-toggle="tab" class="name" id='spec'> <span>Les Spéciales</span></a>
                             </li>
                             <li role="presentation">
-                                <a href="#bambino" aria-controls="votrepizza" role="tab" data-toggle="tab" class="name"> <span>Menu Bambino</span></a>
+                                <a href="#votrepizza" aria-controls="votrepizza" role="tab" data-toggle="tab" class="name" id='yourpiz'> <span>Votre Pizza</span></a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#bambino" aria-controls="votrepizza" role="tab" data-toggle="tab" class="name" id='bamb'> <span>Menu Bambino</span></a>
                             </li>
                         </ul>
                         <!-- Tab panes-->
                         <div class="tab-content content-menu">
-                            <div id="starters" role="tabpanel" class="tab-pane fade in active">
+                            <div id="all" role="tabpanel" class="tab-pane fade in active">
                                 <div>
-                                    <span class="emporter">à emporter 7.50€ / en livraison 8.50€</span>
+                                    <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
                                 </div>
                                 <div class="row">
+                                    <div style="margin-top: 35px;"><span class="subtitle">Les Traditionnelles</span></div>
+                                        <div class="col-md-4">
+                                                <div class="menu-items">
+                                                    <img src="img/maragarita.png" alt="pizza margarita"  style="width: 120px; height: 120px;">
+                                                    <div class="item-content">
+                                                        <div class="title">
+                                                            <div class="name">Margarita</div>
+                                                        </div>
+                                                        <div class="desciption">Tomate, fromage, olives, origan</div>
+                                                    </div>
+                                                </div>
+                                                <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="menu-items">
+                                                    <img src="img/reine.png" alt="pizza reine"  style="width: 120px; height: 120px;">
+                                                    <div class="item-content">
+                                                        <div class="title">
+                                                            <div class="name">Reine</div>
+                                                        </div>
+                                                        <div class="desciption">Tomate, fromage, jambon, champignons, olives, origan</div>
+                                                    </div>
+                                                </div>
+                                                <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="menu-items">
+                                                    <img src="img/pepperoni.png" alt="pizza pepperoni"  style="width: 120px; height: 120px;">
+                                                    <div class="item-content">
+                                                        <div class="title">
+                                                            <div class="name">Pepperoni</div>
+                                                        </div>
+                                                        <div class="desciption">Tomate, fromage, chorizo, poivrons, olives, origan</div>
+                                                    </div>
+                                                </div>
+                                                <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="menu-items">
+                                                    <img src="img/cannibale.png" alt="pizza cannibale"  style="width: 120px; height: 120px;">
+                                                    <div class="item-content">
+                                                        <div class="title">
+                                                            <div class="name">Cannibale</div>
+                                                        </div>
+                                                        <div class="desciption">Tomate, fromage, viande hachée, oignons, oeuf, olives, origan</div>
+                                                    </div>
+                                                </div>
+                                                <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="menu-items">
+                                                    <img src="img/orientale.png" alt="pizza orientale"  style="width: 120px; height: 120px;">
+                                                    <div class="item-content">
+                                                        <div class="title">
+                                                            <div class="name">Orientale</div>
+                                                        </div>
+                                                        <div class="desciption">Tomate, fromage, merguez, poivrons, olives, origan</div>
+                                                    </div>
+                                                </div>
+                                                <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="menu-items">
+                                                    <img src="img/4fromages.png" alt="pizza fromage"  style="width: 120px; height: 120px;">
+                                                    <div class="item-content">
+                                                        <div class="title">
+                                                            <div class="name">4 Fromages</div>
+                                                        </div>
+                                                        <div class="desciption">Tomate, fromage, emmental, chèvre, Roquefort, mozarella, olives, origan</div>
+                                                    </div>
+                                                </div>
+                                                <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="menu-items">
+                                                    <img src="img/4saisons.png" alt="pizza saison"  style="width: 120px; height: 120px;">
+                                                    <div class="item-content">
+                                                        <div class="title">
+                                                            <div class="name">4 Saisons</div>
+                                                        </div>
+                                                        <div class="desciption">Tomate, fromage, jambon, champignons, artichauts, olives, origan</div>
+                                                    </div>
+                                                </div>
+                                                <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="menu-items">
+                                                    <img src="img/napolitaine.png" alt="pizza napolitaine"  style="width: 120px; height: 120px;">
+                                                    <div class="item-content">
+                                                        <div class="title">
+                                                            <div class="name">Napolitaine</div>
+                                                        </div>
+                                                        <div class="desciption">Tomate, fromage, anchois, câpres, olives, origan</div>
+                                                    </div>
+                                                </div>
+                                                <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="menu-items">
+                                                    <img src="img/pecheur.png" alt="pizza pecheur"  style="width: 120px; height: 120px;">
+                                                    <div class="item-content">
+                                                        <div class="title">
+                                                            <div class="name">Pécheur</div>
+                                                        </div>
+                                                        <div class="desciption">Tomate, fromage, thon, crèm fraîche, persillade, olives, origan</div>
+                                                    </div>
+                                                </div>
+                                                <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                            </div>
+                                            <div style="margin-top: 35px;"><span class="subtitle">Les Végétariennes</span></div>
+                                            <div class="col-md-4">
+                                                    <div class="menu-items">
+                                                        <img src="img/vegetarienne.png" alt="pizza vegetarienne"  style="width: 120px; height: 120px;">
+                                                        <div class="item-content">
+                                                            <div class="title">
+                                                                <div class="name">La Végétariennes</div>
+                                                            </div>
+                                                            <div class="desciption">Tomate, champignons, poivrons, artichauts, oignons, fromage, origan</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="menu-items">
+                                                        <img src="img/roma.png" alt="pizza roma"  style="width: 120px; height: 120px;">
+                                                        <div class="item-content">
+                                                            <div class="title">
+                                                                <div class="name">La Roma</div>
+                                                            </div>
+                                                            <div class="desciption">Tomate, tomate fraîche, fromage, origan</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="menu-items">
+                                                        <img src="img/maragarita.png" alt="votre pizza"  style="width: 120px; height: 120px;">
+                                                        <div class="item-content">
+                                                            <div class="title">
+                                                                <div class="name">Margarita + 2 légumes au choix</div>
+                                                            </div>
+                                                            <div class="desciption">Tomate, fromage, olives, origan</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="emporter"> 7.50€ / livraison 8.50€</span>
+                                                </div>
+                                                <div style="margin-top: 35px;"><span class="subtitle">Les Chaussons</span></div>
+                                                <div class="col-md-4">
+                                                        <div class="menu-items">
+                                                            <img src="img/calzone.png" alt="pizza calzone"  style="width: 120px; height: 120px;">
+                                                            <div class="item-content">
+                                                                <div class="title">
+                                                                    <div class="name">Calzone</div>
+                                                                </div>
+                                                                <div class="desciption">Tomate, fromage, jambon, champignons, oeuf, crème fraîche, olives, origan</div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="emporter"> 9€ / livraison 10€</span>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="menu-items">
+                                                            <img src="img/calzone.png" alt="pizza cremier"  style="width: 120px; height: 120px;">
+                                                            <div class="item-content">
+                                                                <div class="title">
+                                                                    <div class="name">Chausson crémier</div>
+                                                                </div>
+                                                                <div class="desciption">Tomate, fromage, jambon, chèvre, crème fraîche, olives, origan</div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="emporter"> 9€ / livraison 10€</span>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="menu-items">
+                                                            <img src="img/calzone.png" alt="pizza gourmand"  style="width: 120px; height: 120px;">
+                                                            <div class="item-content">
+                                                                <div class="title">
+                                                                    <div class="name">Le Gourmand</div>
+                                                                </div>
+                                                                <div class="desciption">Fromage, kebab, sauce blanche, oignons, tomate fraîche, origan</div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="emporter"> 9€ / livraison 10€</span>
+                                                    </div>
+                                                    <div style="margin-top: 35px;"><span class="subtitle">Les Onctueuses</span></div>
+                                                    <div class="col-md-4">
+                                                            <div class="menu-items">
+                                                                <img src="img/campagnarde.png" alt="pizza campagnarde"  style="width: 120px; height: 120px;">
+                                                                <div class="item-content">
+                                                                    <div class="title">
+                                                                        <div class="name">Campagnarde</div>
+                                                                    </div>
+                                                                    <div class="desciption">Crème fraîche, fromage, lardons, pomme de terre, oignons, olives, origan</div>
+                                                                </div>
+                                                            </div>
+                                                            <span class="emporter"> 8.50€ / livraison 9.50€</span>
+                                                        </div>
+                                                        <div class="col-md-4 bigpizza" style="height: 139px;">
+                                                            <div class="menu-items">
+                                                                <img src="img/tartiflette.png" alt="pizza tartiflette"  style="width: 120px; height: 120px;">
+                                                                <div class="item-content">
+                                                                    <div class="title">
+                                                                        <div class="name">Tartiflette</div>
+                                                                    </div>
+                                                                    <div class="desciption">Crème fraîche, fromage, lardons, pomme de terre, oignons, reblochon, olives, origan</div>
+                                                                </div>
+                                                            </div>
+                                                            <span class="emporter"> 8.50€ / livraison 9.50€</span>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="menu-items">
+                                                                <img src="img/solognote.png" alt="pizza solognote"  style="width: 120px; height: 120px;">
+                                                                <div class="item-content">
+                                                                    <div class="title">
+                                                                        <div class="name">Solognote</div>
+                                                                    </div>
+                                                                    <div class="desciption">Tomate, fromage, lardons, pomme de terre, chèvre, crème fraîche, olives, origan</div>
+                                                                </div>
+                                                            </div>
+                                                            <span class="emporter"> 8.50€ / livraison 9.50€</span>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="menu-items">
+                                                                <img src="img/maragarita.png" alt="pizza oceane"  style="width: 120px; height: 120px;">
+                                                                <div class="item-content">
+                                                                    <div class="title">
+                                                                        <div class="name">Océane</div>
+                                                                    </div>
+                                                                    <div class="desciption">Crème fraîche, fromage, saumon fumé, ciboulette, olives, origan</div>
+                                                                </div>
+                                                            </div>
+                                                            <span class="emporter"> 8.50€ / livraison 9.50€</span>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="menu-items">
+                                                                <img src="img/raclette.png" alt="pizza raclette"  style="width: 120px; height: 120px;">
+                                                                <div class="item-content">
+                                                                    <div class="title">
+                                                                        <div class="name">Raclette</div>
+                                                                    </div>
+                                                                    <div class="desciption">Tomate, fromage, pomme de terre, jambon, bacon, raclette, olives, origan</div>
+                                                                </div>
+                                                            </div>
+                                                            <span class="emporter"> 8.50€ / livraison 9.50€</span>
+                                                        </div>
+                                                        <div class="col-md-4"></div>
+                                                        <div style="margin-top: 35px;"><span class="subtitle">Les Spéciales</span></div>
+                                                        <div class="col-md-4">
+                                                                <div class="menu-items">
+                                                                    <img src="img/kebab.png" alt="pizza kebab"  style="width: 120px; height: 120px;">
+                                                                    <div class="item-content">
+                                                                        <div class="title">
+                                                                            <div class="name">Kebab</div>
+                                                                        </div>
+                                                                        <div class="desciption">Tomate, fromage, viande kebab, tomate fraîche, oignons, sauce blanche, olives, origan</div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="emporter"> 9.50€ / livraison 10.50€</span>
+                                                            </div>
+                                                            <div class="col-md-4 bigpizza" style="height: 139px;">
+                                                                <div class="menu-items">
+                                                                    <img src="img/carnivore.png" alt="pizza carnivore"  style="width: 120px; height: 120px;">
+                                                                    <div class="item-content">
+                                                                        <div class="title">
+                                                                            <div class="name">Carnivore</div>
+                                                                        </div>
+                                                                        <div class="desciption">Tomate, fromage, viande hachée, chorizo, merguez, oignons, poivrons, oeuf, olives, origan</div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="emporter"> 9.50€ / livraison 10.50€</span>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="menu-items">
+                                                                    <img src="img/burger.png" alt="pizza burger"  style="width: 120px; height: 120px;">
+                                                                    <div class="item-content">
+                                                                        <div class="title">
+                                                                            <div class="name">Burger</div>
+                                                                        </div>
+                                                                        <div class="desciption">Tomate, fromage, viande hachée, oignons, cheddar, olives, origan, sauce burger</div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="emporter"> 9.50€ / livraison 10.50€</span>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="menu-items">
+                                                                    <img src="img/ananas.png" alt="pizza ananas"  style="width: 120px; height: 120px;">
+                                                                    <div class="item-content">
+                                                                        <div class="title">
+                                                                            <div class="name">Hawaïenne</div>
+                                                                        </div>
+                                                                        <div class="desciption">Crème fraîche, fromage, émincé de poulet, ananas</div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="emporter"> 9.50€ / livraison 10.50€</span>
+                                                            </div>
+                                                            <div class="col-md-4 bigpizza" style="height: 139px;">
+                                                                <div class="menu-items">
+                                                                    <img src="img/dubai.png" alt="pizza dubai"  style="width: 120px; height: 120px;">
+                                                                    <div class="item-content">
+                                                                        <div class="title">
+                                                                            <div class="name">Dubaï</div>
+                                                                        </div>
+                                                                        <div class="desciption">Crème fraîche, fromage, pomme de terre, viande hachée, oignons, oeuf, olives, origan</div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="emporter"> 9.50€ / livraison 10.50€</span>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="menu-items">
+                                                                    <img src="img/buffalo.png" alt="pizza buffalo"  style="width: 120px; height: 120px;">
+                                                                    <div class="item-content">
+                                                                        <div class="title">
+                                                                            <div class="name">Buffalo</div>
+                                                                        </div>
+                                                                        <div class="desciption">Tomate, fromage, viande hachée, merguez, poivrons, sauce BBQ, olives, origan</div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="emporter"> 9.50€ / livraison 10.50€</span>
+                                                            </div>
+                                                            <div class="col-md-4 bigpizza" style="height: 139px;">
+                                                                <div class="menu-items">
+                                                                    <img src="img/pizzahot.png" alt="pizza hot"  style="width: 120px; height: 120px;">
+                                                                    <div class="item-content">
+                                                                        <div class="title">
+                                                                            <div class="name">Pizza Hot</div>
+                                                                        </div>
+                                                                        <div class="desciption">Tomate, fromage, viande hachée, chorizo, pomme de terre, poivrons, chili thaï, olives, origan</div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="emporter"> 9.50€ / livraison 10.50€</span>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="menu-items">
+                                                                    <img src="img/croustipizza.png" alt="pizza crousti"  style="width: 120px; height: 120px;">
+                                                                    <div class="item-content">
+                                                                        <div class="title">
+                                                                            <div class="name">Crousti Pizza</div>
+                                                                        </div>
+                                                                        <div class="desciption">Tomate, fromage, jambon, lardons, oeuf, poivrons, oignons, champignons, artichauts, olives, origan</div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="emporter"> 9.50€ / livraison 10.50€</span>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="menu-items">
+                                                                    <img src="img/chevre.png" alt="pizza chevre"  style="width: 120px; height: 120px;">
+                                                                    <div class="item-content">
+                                                                        <div class="title">
+                                                                            <div class="name">Chèvre Chaud</div>
+                                                                        </div>
+                                                                        <div class="desciption">Crème fraîche, fromage, chèvre, miel, noix</div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="emporter"> 9.50€ / livraison 10.50€</span>
+                                                            </div>
+                                </div>
+                                <!-- <div style="margin-top: 8px;">
+                                    <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
+                                </div> -->
+                            </div>
+                            <div id="starters" role="tabpanel" class="tab-pane fade in">
+                                <div>
+                                    <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
+                                </div>
+                                <div class="row">
+                                        <div style="margin-top: 35px;"><span class="subtitle">Les Traditionnelles</span></div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
                                             <img src="img/maragarita.png" alt="pizza margarita"  style="width: 120px; height: 120px;">
@@ -217,6 +585,7 @@
                                                 <div class="desciption">Tomate, fromage, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -228,6 +597,7 @@
                                                 <div class="desciption">Tomate, fromage, jambon, champignons, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -239,6 +609,7 @@
                                                 <div class="desciption">Tomate, fromage, chorizo, poivrons, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -250,6 +621,7 @@
                                                 <div class="desciption">Tomate, fromage, viande hachée, oignons, oeuf, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -261,6 +633,7 @@
                                                 <div class="desciption">Tomate, fromage, merguez, poivrons, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -272,6 +645,7 @@
                                                 <div class="desciption">Tomate, fromage, emmental, chèvre, Roquefort, mozarella, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -283,6 +657,7 @@
                                                 <div class="desciption">Tomate, fromage, jambon, champignons, artichauts, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -294,6 +669,7 @@
                                                 <div class="desciption">Tomate, fromage, anchois, câpres, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -305,17 +681,19 @@
                                                 <div class="desciption">Tomate, fromage, thon, crèm fraîche, persillade, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                 </div>
-                                <div style="margin-top: 8px;">
+                                <!-- <div style="margin-top: 8px;">
                                     <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
-                                </div>
+                                </div> -->
                             </div>
                             <div id="dishes" role="tabpanel" class="tab-pane fade">
                                 <div>
-                                    <span class="emporter">à emporter 7.50€ / en livraison 8.50€</span>
+                                    <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
                                 </div>
                                 <div class="row">
+                                        <div style="margin-top: 35px;"><span class="subtitle">Les Végétariennes</span></div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
                                             <img src="img/vegetarienne.png" alt="pizza vegetarienne"  style="width: 120px; height: 120px;">
@@ -326,6 +704,7 @@
                                                 <div class="desciption">Tomate, champignons, poivrons, artichauts, oignons, fromage, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -337,6 +716,7 @@
                                                 <div class="desciption">Tomate, tomate fraîche, fromage, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -348,17 +728,19 @@
                                                 <div class="desciption">Tomate, fromage, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 7.50€ / livraison 8.50€</span>
                                     </div>
                                 </div>
-                                <div style="margin-top: 8px;">
+                                <!-- <div style="margin-top: 8px;">
                                     <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
-                                </div>
+                                </div> -->
                             </div>
                             <div id="deserts" role="tabpanel" class="tab-pane fade">
                                 <div>
-                                    <span class="emporter">à emporter 9€ / en livraison 10€</span>
+                                    <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
                                 </div>
                                 <div class="row">
+                                        <div style="margin-top: 35px;"><span class="subtitle">Les Chaussons</span></div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
                                             <img src="img/calzone.png" alt="pizza calzone"  style="width: 120px; height: 120px;">
@@ -369,6 +751,7 @@
                                                 <div class="desciption">Tomate, fromage, jambon, champignons, oeuf, crème fraîche, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9€ / livraison 10€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -380,6 +763,7 @@
                                                 <div class="desciption">Tomate, fromage, jambon, chèvre, crème fraîche, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9€ / livraison 10€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -391,17 +775,19 @@
                                                 <div class="desciption">Fromage, kebab, sauce blanche, oignons, tomate fraîche, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9€ / livraison 10€</span>
                                     </div>
                                 </div>
-                                <div style="margin-top: 8px;">
+                                <!-- <div style="margin-top: 8px;">
                                     <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
-                                </div>
+                                </div> -->
                             </div>
                             <div id="drinks" role="tabpanel" class="tab-pane fade">
                                 <div>
-                                    <span class="emporter">à emporter 8.50€ / en livraison 9.50€</span>
+                                    <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
                                 </div>  
                                 <div class="row">
+                                        <div style="margin-top: 35px;"><span class="subtitle">Les Onctueuses</span></div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
                                             <img src="img/campagnarde.png" alt="pizza campagnarde"  style="width: 120px; height: 120px;">
@@ -412,6 +798,7 @@
                                                 <div class="desciption">Crème fraîche, fromage, lardons, pomme de terre, oignons, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 8.50€ / livraison 9.50€</span>
                                     </div>
                                     <div class="col-md-4 bigpizza" style="height: 139px;">
                                         <div class="menu-items">
@@ -423,6 +810,7 @@
                                                 <div class="desciption">Crème fraîche, fromage, lardons, pomme de terre, oignons, reblochon, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 8.50€ / livraison 9.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -434,6 +822,7 @@
                                                 <div class="desciption">Tomate, fromage, lardons, pomme de terre, chèvre, crème fraîche, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 8.50€ / livraison 9.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -445,6 +834,7 @@
                                                 <div class="desciption">Crème fraîche, fromage, saumon fumé, ciboulette, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 8.50€ / livraison 9.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -456,17 +846,19 @@
                                                 <div class="desciption">Tomate, fromage, pomme de terre, jambon, bacon, raclette, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 8.50€ / livraison 9.50€</span>
                                     </div>
                                 </div>
-                                <div style="margin-top: 8px;">
+                                <!-- <div style="margin-top: 8px;">
                                     <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
-                                </div>
+                                </div> -->
                             </div>
                             <div id="speciales" role="tabpanel" class="tab-pane fade">
                                 <div>
-                                    <span class="emporter">à emporter 9.50€ / en livraison 10.50€</span>
+                                    <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
                                 </div>
                                 <div class="row">
+                                        <div style="margin-top: 35px;"><span class="subtitle">Les Spéciales</span></div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
                                             <img src="img/kebab.png" alt="pizza kebab"  style="width: 120px; height: 120px;">
@@ -477,6 +869,7 @@
                                                 <div class="desciption">Tomate, fromage, viande kebab, tomate fraîche, oignons, sauce blanche, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9.50€ / livraison 10.50€</span>
                                     </div>
                                     <div class="col-md-4 bigpizza" style="height: 139px;">
                                         <div class="menu-items">
@@ -488,6 +881,7 @@
                                                 <div class="desciption">Tomate, fromage, viande hachée, chorizo, merguez, oignons, poivrons, oeuf, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9.50€ / livraison 10.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -499,6 +893,7 @@
                                                 <div class="desciption">Tomate, fromage, viande hachée, oignons, cheddar, olives, origan, sauce burger</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9.50€ / livraison 10.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -510,6 +905,7 @@
                                                 <div class="desciption">Crème fraîche, fromage, émincé de poulet, ananas</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9.50€ / livraison 10.50€</span>
                                     </div>
                                     <div class="col-md-4 bigpizza" style="height: 139px;">
                                         <div class="menu-items">
@@ -521,6 +917,7 @@
                                                 <div class="desciption">Crème fraîche, fromage, pomme de terre, viande hachée, oignons, oeuf, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9.50€ / livraison 10.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -532,6 +929,7 @@
                                                 <div class="desciption">Tomate, fromage, viande hachée, merguez, poivrons, sauce BBQ, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9.50€ / livraison 10.50€</span>
                                     </div>
                                     <div class="col-md-4 bigpizza" style="height: 139px;">
                                         <div class="menu-items">
@@ -543,6 +941,7 @@
                                                 <div class="desciption">Tomate, fromage, viande hachée, chorizo, pomme de terre, poivrons, chili thaï, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9.50€ / livraison 10.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -554,6 +953,7 @@
                                                 <div class="desciption">Tomate, fromage, jambon, lardons, oeuf, poivrons, oignons, champignons, artichauts, olives, origan</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9.50€ / livraison 10.50€</span>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="menu-items">
@@ -565,11 +965,12 @@
                                                 <div class="desciption">Crème fraîche, fromage, chèvre, miel, noix</div>
                                             </div>
                                         </div>
+                                        <span class="emporter"> 9.50€ / livraison 10.50€</span>
                                     </div>
                                 </div>
-                                <div style="margin-top: 8px;">
+                                <!-- <div style="margin-top: 8px;">
                                     <span class="diametre">Toutes nos pizzas sont d'un diamètre 33 cm</span>
-                                </div>
+                                </div> -->
                             </div>
                             <div id="bambino" role="tabpanel" class="tab-pane fade">
                                 <div class="row">
@@ -601,9 +1002,6 @@
                     </div>
 
                 </div>
-                <div style="text-align: center;">
-                    <span class="emporter">Tous les paninis sont à 4.50€</span>
-                </div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="menu-items">
@@ -614,6 +1012,9 @@
                                 </div>
                                 <div class="desciption">Mozza, chèvre, emmental, Roquefort, origan</div>
                             </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">4.50€</span>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -626,6 +1027,9 @@
                                 <div class="desciption">Jambon, fromage, tomate fraîche</div>
                             </div>
                         </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">4.50€</span>
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="menu-items">
@@ -636,6 +1040,9 @@
                                 </div>
                                 <div class="desciption">Jambon, fromage, tomate fraîche, chèvre</div>
                             </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">4.50€</span>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -648,6 +1055,9 @@
                                 <div class="desciption">Thon, emmental</div>
                             </div>
                         </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">4.50€</span>
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="menu-items">
@@ -656,6 +1066,9 @@
                                     <div class="name">Nutella</div>
                                 </div>
                             </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">4.50€</span>
                         </div>
                     </div>
                 </div>
@@ -672,9 +1085,6 @@
                         <h2 class="title">Nos Salades</h2>
                     </div>
                     
-                </div>
-                <div style="text-align: center;">
-                    <span class="emporter">Toutes nos salades sont à 4.90€</span>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
@@ -699,6 +1109,9 @@
                                 <div class="desciption">Salade, tomate fraîche, mozza, olives, persil</div>
                             </div>
                         </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">4.90€</span>
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="menu-items">
@@ -709,6 +1122,9 @@
                                 </div>
                                 <div class="desciption">Salade, tomate fraîche, saumon, fromage frais, ciboulette</div>
                             </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">4.90€</span>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -721,6 +1137,9 @@
                                 <div class="desciption">Salade, tomate fraîche, jambon, maïs, oeuf, persil</div>
                             </div>
                         </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">4.90€</span>
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="menu-items">
@@ -731,6 +1150,9 @@
                                 </div>
                                 <div class="desciption">Mache, pâtes, tomate fraîche, thon, olives</div>
                             </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">4.90€</span>
                         </div>
                     </div>
                 </div>
@@ -748,9 +1170,6 @@
                     </div>
                     
                 </div>
-                <div style="text-align: center;">
-                    <span class="emporter">Tous nos desserts sont à 3€</span>
-                </div>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="menu-items">
@@ -761,6 +1180,9 @@
                                 </div>
                                     <div class="desciption">Chocolat, caramel beurre salé</div>
                             </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">3€</span>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -773,6 +1195,9 @@
                                 <div class="desciption">Selon saison</div>
                             </div>
                         </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">3€</span>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="menu-items">
@@ -784,6 +1209,9 @@
                                 <div class="desciption">Snickers, Daim, pomme</div>
                             </div>
                         </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">3€</span>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="menu-items">
@@ -793,6 +1221,9 @@
                                     <div class="name">Glaces</div>
                                 </div>
                             </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <span class="emporter">3€</span>
                         </div>
                     </div>
                 </div>
@@ -815,11 +1246,11 @@
                 <div class="col-md-4">
                     <h1 class="infofooter" style="font-family: 'Tangerine', cursive; font-size: 42px;"><strong>Pizza Hot</strong></h1>
                     <p class="infofooter" style="margin-top: 20px;margin-bottom: 10px;">
-                        En livraison ou à emporter<br>
+                        livraison ou <br>
                         25 rue Rouget de L'Isle - 41110 Saint Aignan<br>
                         02 18 09 15 51
                     </p>
-                    <span>Sur place: CB / Espèces / Tickets restaurant<br>En livraison: CB / Espèces</span>
+                    <span>Sur place: CB / Espèces / Tickets restaurant<br>livraison: CB / Espèces</span>
                 </div>
                 <div class="footercenter col-md-4">
                     <div class="socialnetwork">
